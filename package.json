@@ -29,7 +29,6 @@
       "react-app/jest"
     ]
   },
-  "homepage": "http://Yash01607.github.io/My-Portfolio",
   "browserslist": {
     "production": [
       ">0.2%",
