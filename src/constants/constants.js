@@ -3,8 +3,7 @@ export const projects = [
     title: 'AgroTech',
     description:
       'Developed an E-commerce website using MERN Stack for agricultural products. It allows users to securely login and purchase products. Also implemented a live chat feature using Socket.io enabling customers to engage in real-time conversations with admin users.',
-    image:
-      'https://github.com/Yash01607/My-Portfolio/blob/master/docs/assets/images/agrotech.png',
+    image: './My-Portfolio/agrotech.png',
     tags: ['ReactJS', 'ReduxJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'Socket.io'],
     source: 'https://github.com/Yash01607/Ecommerce_website',
     visit: 'https://agrotech-yajt.onrender.com/',
@@ -14,8 +13,7 @@ export const projects = [
     title: 'CrowdWallet',
     description:
       'Crowd Wallet is designed to assist entrepreneurs in raising crowd funds for their projects. Built using Blockchain Technology to promote transparency in spending of funds collected, this application consists of voting system where all contributors cast vote expressing their approval or disapproval of the spending request.',
-    image:
-      'https://github.com/Yash01607/My-Portfolio/blob/master/docs/assets/images/CrowdWallet.jpeg',
+    image: './My-Portfolio/crowdwallet.png',
     tags: ['NextJS', 'Solidity', 'Web3'],
     source: 'https://github.com/Yash01607/CrowdCoin',
     visit: 'https://crowd-coin-yash01607.vercel.app/',
@@ -25,8 +23,7 @@ export const projects = [
     title: 'Memoreaum',
     description:
       'Developed a user-friendly social media application utilizing the MERN stack. It allows users to effortlessly share captivating moments and events from their lives. Users can also like and comment on these shared memories',
-    image:
-      'https://github.com/Yash01607/My-Portfolio/blob/master/docs/assets/images/memoreaum.jpeg',
+    image: './My-Portfolio/memoreaum.png',
     tags: ['MongoDB', 'ExpressJS', 'ReactJS', 'NodeJS'],
     source: 'https://github.com/Yash01607/Memoreaum',
     visit: 'https://memoreaum.onrender.com/',
@@ -36,8 +33,7 @@ export const projects = [
     title: 'Expense Tracker',
     description:
       'Developed a userifriendly Expense Tracker Web-App where users can add keep track of their expenses digitally.',
-    image:
-      'https://github.com/Yash01607/My-Portfolio/blob/master/docs/assets/images/expense-tracker.jpeg',
+    image: './My-Portfolio/expense-tracker.png',
     tags: ['ReactJS', 'NodeJS', 'ExpressJS', 'Mongoose'],
     source: 'https://github.com/Yash01607/Expense-Tracker',
     visit: 'https://expense-tracker-t01y.onrender.com/',
