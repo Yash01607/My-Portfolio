@@ -3,7 +3,7 @@ export const projects = [
     title: 'AgroTech',
     description:
       'Developed an E-commerce website using MERN Stack for agricultural products. It allows users to securely login and purchase products. Also implemented a live chat feature using Socket.io enabling customers to engage in real-time conversations with admin users.',
-    image: '/images/agrotech.jpeg',
+    image: '/images/AgroTech.jpeg',
     tags: ['ReactJS', 'ReduxJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'Socket.io'],
     source: 'https://github.com/Yash01607/Ecommerce_website',
     visit: 'https://agrotech-yajt.onrender.com/',
@@ -36,7 +36,7 @@ export const projects = [
     image: '/images/expense-tracker.jpeg',
     tags: ['ReactJS', 'NodeJS', 'ExpressJS', 'Mongoose'],
     source: 'https://github.com/Yash01607/Expense-Tracker',
-    visit: 'https://google.com',
+    visit: 'https://expense-tracker-t01y.onrender.com/',
     id: 3,
   },
 ];
