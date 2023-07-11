@@ -32,7 +32,7 @@ export const projects = [
   {
     title: 'Expense Tracker',
     description:
-      'Developed a userifriendly Expense Tracker Web-App where users can add keep track of their expenses digitally.',
+      'Developed a userifriendly Expense Tracker Web-App where users can digitally keep track of their monthly expenses.',
     image: './images/expense-tracker.png',
     tags: ['ReactJS', 'NodeJS', 'ExpressJS', 'Mongoose'],
     source: 'https://github.com/Yash01607/Expense-Tracker',
