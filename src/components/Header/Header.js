@@ -24,7 +24,7 @@ const Header = () => {
     <Container>
       <Div1>
         <a
-          href="/"
+          href="/My-Portfolio/"
           style={{
             display: 'flex',
             alignItems: 'center',
