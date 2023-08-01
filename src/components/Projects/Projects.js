@@ -28,9 +28,13 @@ const Projects = () => (
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-            <Img src={p.image} alt={p.title} />
+            <a href={p.visit} target="_blank" rel="noreferrer">
+              <Img src={p.image} alt={p.title} title={`Visit ${p.title}`} />
+            </a>
             <TitleContent>
-              <HeaderThree title={'true'}>{p.title}</HeaderThree>
+              <a href={p.visit} target="_blank" rel="noreferrer">
+                <HeaderThree title={'true'}>{p.title}</HeaderThree>
+              </a>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
