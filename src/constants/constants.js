@@ -73,5 +73,6 @@ export const aboutMeText =
 export const contactDetails = {
   phone: '+91-89755-17715',
   email: ' yashagrawal01meh@gmail.com',
-  address: 'House No. 401, Ramnagar, Mehkar - 443301',
+  address:
+    'Housr 84, Plot No.183, Masjid Banda Rd, Sai Pruthvi Enclave, Kondapur, Hyderabad, Telangana 500084',
 };
