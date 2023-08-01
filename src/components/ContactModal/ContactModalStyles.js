@@ -23,7 +23,6 @@ export const DropDownContainer = styled.div`
   border-radius: 8px;
   padding: 4px 0;
   cursor: default;
-  min-width: 500px;
   max-width: 500px;
 
   @media ${(props) => props.theme.breakpoints.md} {
