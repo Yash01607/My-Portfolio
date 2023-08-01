@@ -69,3 +69,9 @@ export const heroSectionText =
 
 export const aboutMeText =
   'As a full-stack web developer, I possess a versatile skill set in both front-end and back-end development, ready to tackle diverse web projects with enthusiasm and a drive for excellence.';
+
+export const contactDetails = {
+  phone: '+91-89755-17715',
+  email: ' yashagrawal01meh@gmail.com',
+  address: 'House No. 401, Ramnagar, Mehkar - 443301',
+};

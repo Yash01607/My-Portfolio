@@ -2,6 +2,8 @@ import React from 'react';
 import { AiFillPhone, AiOutlineMail } from 'react-icons/ai';
 import { FaLocationArrow } from 'react-icons/fa';
 
+import { contactDetails } from '../../constants/constants';
+
 import {
   DropDownContainerWrapper,
   DropDownContainer,
@@ -21,15 +23,17 @@ const ContactModal = (props) => {
     <DropDownContainerWrapper onClick={() => props.onClose()}>
       <DropDownContainer onClick={(e) => e.stopPropagation()}>
         <DropDownItem
-          onClick={() => navigator.clipboard.writeText('+91 89755  17715')}
+          onClick={() => navigator.clipboard.writeText(contactDetails.phone)}
           title="Click to copy Contact no. to clipboard"
         >
           <DropDownIcon>
             <AiFillPhone color="black" />
           </DropDownIcon>
           <DropDownTextContainer>
-            <DropDownItemTitle href="tel:91-89755-17715">
-              Phone: +91-89755-17715{' '}
+            <DropDownItemTitle
+              href={`tel:${contactDetails.phone.substring(1)}`}
+            >
+              Phone: {contactDetails.phone}{' '}
             </DropDownItemTitle>
             <DropDownItemDesc>
               Let's get together and have a chat?
@@ -37,17 +41,15 @@ const ContactModal = (props) => {
           </DropDownTextContainer>
         </DropDownItem>
         <DropDownItem
-          onClick={() =>
-            navigator.clipboard.writeText('yashagrawal01meh@gmail.com')
-          }
+          onClick={() => navigator.clipboard.writeText(contactDetails.email)}
           title="Click to copy E-mail to clipboard"
         >
           <DropDownIcon>
             <AiOutlineMail color="black" />
           </DropDownIcon>
           <DropDownTextContainer>
-            <DropDownItemTitle href="mailto:yashagrawal01meh@gmail.com">
-              Email: yashagrawal01meh@gmail.com
+            <DropDownItemTitle href={`mailto:${contactDetails.email}`}>
+              Email: {contactDetails.email}
             </DropDownItemTitle>
             <DropDownItemDesc>
               If you want to talk to me, send a message and I'll get back
@@ -55,11 +57,7 @@ const ContactModal = (props) => {
           </DropDownTextContainer>
         </DropDownItem>
         <DropDownItem
-          onClick={() =>
-            navigator.clipboard.writeText(
-              'House No. 401, Ramnagar, Mehkar - 443301'
-            )
-          }
+          onClick={() => navigator.clipboard.writeText(contactDetails.address)}
           title="Click to copy Address to clipboard"
         >
           <DropDownIcon>
@@ -67,9 +65,7 @@ const ContactModal = (props) => {
           </DropDownIcon>
           <DropDownTextContainer>
             <DropDownItemTitle>Address</DropDownItemTitle>
-            <DropDownItemDesc>
-              House No. 401, Ramnagar, Mehkar - 443301
-            </DropDownItemDesc>
+            <DropDownItemDesc>{contactDetails.address}</DropDownItemDesc>
           </DropDownTextContainer>
         </DropDownItem>
       </DropDownContainer>

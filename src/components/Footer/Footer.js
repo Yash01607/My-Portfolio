@@ -2,6 +2,9 @@ import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
+
+import { contactDetails } from '../../constants/constants';
+
 import {
   CompanyContainer,
   FooterWrapper,
@@ -20,18 +23,20 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:91-89755-17715">+91-89755-17715</LinkItem>
+          <LinkItem href={`tel:${contactDetails.phone.substring(1)}`}>
+            {contactDetails.phone}
+          </LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:yashagrawal01meh@gmail.com">
-            yashagrawal01meh@gmail.com
+          <LinkItem href={`mailto:${contactDetails.email}`}>
+            {contactDetails.email}
           </LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project at a time</Slogan>
+          <Slogan>Building things for the web.</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/Yash01607" target="_blank">
