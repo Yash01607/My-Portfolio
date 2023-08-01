@@ -28,7 +28,9 @@ const ContactModal = (props) => {
             <AiFillPhone color="black" />
           </DropDownIcon>
           <DropDownTextContainer>
-            <DropDownItemTitle>Phone: +91-89755-17715 </DropDownItemTitle>
+            <DropDownItemTitle href="tel:91-89755-17715">
+              Phone: +91-89755-17715{' '}
+            </DropDownItemTitle>
             <DropDownItemDesc>
               Let's get together and have a chat?
             </DropDownItemDesc>
@@ -44,7 +46,7 @@ const ContactModal = (props) => {
             <AiOutlineMail color="black" />
           </DropDownIcon>
           <DropDownTextContainer>
-            <DropDownItemTitle>
+            <DropDownItemTitle href="mailto:yashagrawal01meh@gmail.com">
               Email: yashagrawal01meh@gmail.com
             </DropDownItemTitle>
             <DropDownItemDesc>

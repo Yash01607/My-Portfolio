@@ -69,7 +69,7 @@ export const DropDownTextContainer = styled.div`
   flex-direction: column;
 `;
 
-export const DropDownItemTitle = styled.h2`
+export const DropDownItemTitle = styled.a`
   color: #0f1624;
   font-size: 18px;
   line-height: 26px;
