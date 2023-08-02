@@ -5,7 +5,7 @@ import {
   SectionText,
   SectionTitle,
 } from '../../styles/GlobalComponents';
-// import Button from '../../styles/GlobalComponents/Button';
+import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 import { heroSectionText } from '../../constants/constants';
 
@@ -18,14 +18,18 @@ const Hero = () => (
         <br />I build things for the web
       </SectionTitle>
       <SectionText>{heroSectionText}</SectionText>
-      {/* <Button
+      <Button
         onClick={() =>
-          window.open('https://google.com', '_blank', 'noopener,noreferrer')
+          window.open(
+            'https://github.com/Yash01607',
+            '_blank',
+            'noopener,noreferrer'
+          )
         }
         target="_blank"
       >
-        Learn More
-      </Button> */}
+        Know More
+      </Button>
     </LeftSection>
   </Section>
 );

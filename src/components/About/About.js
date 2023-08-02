@@ -114,8 +114,10 @@ const About = () => {
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
-                <CarouselItemText>{item.degree} - </CarouselItemText>
-                <CarouselItemText>{item.college}</CarouselItemText>
+                <CarouselItemText>{item.designation} - </CarouselItemText>
+                <CarouselItemText type="institute">
+                  {item.institute}
+                </CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}

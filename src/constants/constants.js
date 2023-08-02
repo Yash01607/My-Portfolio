@@ -43,24 +43,29 @@ export const projects = [
 
 export const EducationDetails = [
   {
-    year: 2017,
-    degree: 'Completed Senior Secondary Education',
-    college: 'Central Public School, Mehkar (MH)',
-  },
-  {
-    year: 2018,
-    degree: 'Completed Eleventh Grade',
-    college: 'Arihant College of Arts, Commerce & Science, Pune (MH)',
-  },
-  {
-    year: 2019,
-    degree: 'Completed Higher Secondary Education',
-    college: 'Arihant College of Arts, Commerce & Science, Pune (MH)',
+    year: 'Present',
+    designation: 'Software Developer',
+    institute: 'Beehyv Software Solutions Pvt. Ltd.',
   },
   {
     year: 2023,
-    degree: 'Completed B.Tech in Petroleum Engineering',
-    college: 'IIT(ISM) Dhanbad',
+    designation: 'B.Tech in Petroleum Engineering',
+    institute: 'IIT(ISM) Dhanbad',
+  },
+  {
+    year: 2019,
+    designation: 'Higher Secondary Education',
+    institute: 'Arihant College of Arts, Commerce & Science, Pune (MH)',
+  },
+  {
+    year: 2018,
+    designation: 'Eleventh Grade',
+    institute: 'Arihant College of Arts, Commerce & Science, Pune (MH)',
+  },
+  {
+    year: 2017,
+    designation: 'Senior Secondary Education',
+    institute: 'Central Public School, Mehkar (MH)',
   },
 ];
 
