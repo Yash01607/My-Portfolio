@@ -77,28 +77,28 @@ const Technologies = () => (
       <ListItem2>
         <SiHiveBlockchain size={'4rem'} />
         <ListContainer>
-          <ListTitle>Web3 Technologies</ListTitle>
+          <ListTitle>Web3</ListTitle>
           <ListParagraph>
             Experienced with
             <br />
             Solidity
             <br />
             Metamask
-            <br />
-            Web3
           </ListParagraph>
         </ListContainer>
       </ListItem2>
       <ListItem2>
         <SiCplusplus size={'4rem'} />
         <ListContainer>
-          <ListTitle>Programming Languages</ListTitle>
+          <ListTitle>Languages</ListTitle>
           <ListParagraph>
             Experienced with
             <br />
             C/C++
             <br />
             JavaScript
+            <br />
+            Java
           </ListParagraph>
         </ListContainer>
       </ListItem2>
