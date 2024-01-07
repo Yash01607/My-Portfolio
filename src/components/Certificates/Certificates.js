@@ -5,7 +5,6 @@ import {
   CardInfo,
   GridContainer,
   HeaderThree,
-  Hr,
   TitleContent,
   Img,
 } from "./certificateStyles";
@@ -18,7 +17,7 @@ import {
 import { certificates } from "../../constants/constants";
 
 const Certificates = () => (
-  <Section nopadding id={"projects"}>
+  <Section nopadding id={"certificates"}>
     <SectionDivider />
     <SectionTitle main>Certificates</SectionTitle>
     <GridContainer>
