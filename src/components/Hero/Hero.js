@@ -21,7 +21,7 @@ const Hero = () => (
       <Button
         onClick={() =>
           window.open(
-            'https://github.com/Yash01607',
+            'https://www.linkedin.com/in/yash-agrawal-a150991a5/',
             '_blank',
             'noopener,noreferrer'
           )
