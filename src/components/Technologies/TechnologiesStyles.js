@@ -58,7 +58,6 @@ export const List2 = styled.ul`
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   margin: 3rem 0;
 
   @media ${(props) => props.theme.breakpoints.lg} {

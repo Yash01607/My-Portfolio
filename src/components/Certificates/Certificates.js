@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import {
   CertificateCard,
@@ -7,17 +7,17 @@ import {
   HeaderThree,
   TitleContent,
   Img,
-} from "./certificateStyles";
+} from './certificateStyles';
 
 import {
   Section,
   SectionDivider,
   SectionTitle,
-} from "../../styles/GlobalComponents";
-import { certificates } from "../../constants/constants";
+} from '../../styles/GlobalComponents';
+import { certificates } from '../../constants/constants';
 
 const Certificates = () => (
-  <Section nopadding id={"certificates"}>
+  <Section id={'certificates'}>
     <SectionDivider />
     <SectionTitle main>Certificates</SectionTitle>
     <GridContainer>
@@ -26,15 +26,14 @@ const Certificates = () => (
           <CertificateCard key={i}>
             <Img src={c.logo} alt={c.title} title={`Visit ${c.title}`} />
             <CardInfo className="card-info">
-              {" "}
+              {' '}
               <TitleContent>
                 <a href={c.link} target="_blank" rel="noreferrer">
                   <HeaderThree>{c.title}</HeaderThree>
                 </a>
               </TitleContent>
-              {c.issuedBy}
+              {c.issuedBy}, {c.issuedOn}
               <br />
-              {c.issuedOn}
             </CardInfo>
           </CertificateCard>
         );

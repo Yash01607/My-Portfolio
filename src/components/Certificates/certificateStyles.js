@@ -31,7 +31,6 @@ export const CertificateCard = styled.div`
   }
 `;
 export const TitleContent = styled.div`
-  text-align: center;
   z-index: 20;
   width: 100%;
   padding-top: 10px;
@@ -42,7 +41,7 @@ export const HeaderThree = styled.h3`
   letter-spacing: 2px;
   color: #9cc9e3;
   padding: 0.5rem 0;
-  font-size: ${(props) => (props.title ? '3rem' : '2rem')};
+  font-size: ${(props) => (props.title ? '3rem' : '1.6rem')};
 `;
 
 export const Hr = styled.hr`
@@ -67,7 +66,7 @@ export const CardInfo = styled.p`
   width: 100%;
   padding: 0 10px;
   color: #e4e6e7;
-  font-style: 2rem;
+  font-size: 1.5rem;
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {

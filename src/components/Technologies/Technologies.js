@@ -18,22 +18,19 @@ import {
   ListItem2,
 } from './TechnologiesStyles';
 
+import { technologiesText } from '../../constants/constants';
+
 const Technologies = () => (
   <Section id="tech">
     <SectionDivider />
     <SectionTitle main>Technologies</SectionTitle>
-    <SectionText>
-      I have worked with a diverse range of technologies in the world of web
-      development.
-    </SectionText>
+    <SectionText>{technologiesText}</SectionText>
     <List>
       <ListItem>
         <DiReact size={'4rem'} />
         <ListContainer>
           <ListTitle>Frontend</ListTitle>
           <ListParagraph>
-            Experienced with
-            <br />
             ReactJS
             <br />
             NextJS
@@ -49,11 +46,13 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Backend</ListTitle>
           <ListParagraph>
-            Experienced with
-            <br />
             NodeIS
             <br />
             ExpressJS
+            <br />
+            Django
+            <br />
+            FastAPI
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -62,13 +61,13 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>DataBases</ListTitle>
           <ListParagraph>
-            Experienced with
-            <br />
             MongoDB
             <br />
             MySQL
             <br />
             Firebase
+            <br />
+            Postgrese
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -79,8 +78,6 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Web3</ListTitle>
           <ListParagraph>
-            Experienced with
-            <br />
             Solidity
             <br />
             Metamask
@@ -92,13 +89,13 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Languages</ListTitle>
           <ListParagraph>
-            Experienced with
-            <br />
             C/C++
             <br />
             JavaScript
             <br />
             Java
+            <br />
+            Python
           </ListParagraph>
         </ListContainer>
       </ListItem2>
