@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 import {
   Section,
   SectionText,
   SectionTitle,
-} from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
-import { heroSectionText } from '../../constants/constants';
+} from "../../styles/GlobalComponents";
+import Button from "../../styles/GlobalComponents/Button";
+import { LeftSection, TitleText } from "./HeroStyles";
+import { Titles, heroSectionText } from "../../constants/constants";
 
 const Hero = () => (
   <Section row nopadding>
@@ -17,13 +17,18 @@ const Hero = () => (
         Yash Agrawal
         <br />I build things for the web
       </SectionTitle>
+      <TitleText>
+        {Titles.map((title, i) =>
+          i < Titles.length - 1 ? <span>{title} | </span> : <span>{title}</span>
+        )}
+      </TitleText>
       <SectionText>{heroSectionText}</SectionText>
       <Button
         onClick={() =>
           window.open(
-            'https://www.linkedin.com/in/yash-agrawal-a150991a5/',
-            '_blank',
-            'noopener,noreferrer'
+            "https://github.com/Yash01607",
+            "_blank",
+            "noopener,noreferrer"
           )
         }
         target="_blank"

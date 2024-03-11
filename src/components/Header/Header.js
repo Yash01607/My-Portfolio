@@ -44,7 +44,7 @@ const Header = () => {
           <NavLink href="#tech">Technologies</NavLink>
         </li>
         <li>
-          <NavLink href="#about">About</NavLink>
+          <NavLink href="#my-timeline">My Timeline</NavLink>
         </li>
         <li>
           <div>
