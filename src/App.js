@@ -20,8 +20,8 @@ function App() {
       </Section>
       <MyTimeline />
       <Projects />
-      <Certificates />
       <Technologies />
+      <Certificates />
     </Layout>
   );
 }
