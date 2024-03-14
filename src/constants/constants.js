@@ -32,7 +32,7 @@ export const projects = [
   {
     title: "Expense Tracker",
     description:
-      "Developed a userifriendly Expense Tracker Web-App where users can digitally keep track of their monthly expenses.",
+      "Developed a user friendly Expense Tracker Web-App where users can digitally keep track of their monthly expenses.",
     image: "./images/expense-tracker.png",
     tags: ["ReactJS", "NodeJS", "ExpressJS", "Mongoose"],
     source: "https://github.com/Yash01607/Expense-Tracker",
@@ -141,5 +141,103 @@ export const certificates = [
     issuedOn: "Sep 2020",
     logo: "./images/hackerrank.png",
     link: "https://www.hackerrank.com/certificates/94c876ad5f78",
+  },
+];
+
+export const Skills = [
+  {
+    category: "Backend",
+    skills: [
+      { name: "NodeJS", image: "./images/technologies/backend/nodejs.png" },
+      { name: "ExpressJS", image: "./images/technologies/backend/express.png" },
+      { name: "Django", image: "./images/technologies/backend/django.png" },
+      { name: "FastAPI", image: "./images/technologies/backend/fastapi.png" },
+      { name: "Socket.IO", image: "./images/technologies/backend/socketio.png" },
+    ],
+  },
+  {
+    category: "Frontend",
+    skills: [
+      { name: "ReactJS", image: "./images/technologies/frontend/react.png" },
+      { name: "NextJS", image: "./images/technologies/frontend/next-js.png" },
+      { name: "Redux", image: "./images/technologies/frontend/redux.png" },
+      {
+        name: "BootStrap",
+        image: "./images/technologies/frontend/bootstrap.png",
+      },
+      { name: "HTML", image: "./images/technologies/frontend/html.png" },
+      { name: "CSS", image: "./images/technologies/frontend/css.png" },
+      { name: "GraphQL", image: "./images/technologies/frontend/graphql.png" },
+    ],
+  },
+  {
+    category: "Languages",
+    skills: [
+      {
+        name: "C++",
+        image: "./images/technologies/languages/c_plus_plus.png",
+      },
+      {
+        name: "JavaScript",
+        image: "./images/technologies/languages/javascript.png",
+      },
+      { name: "Python", image: "./images/technologies/languages/python.png" },
+      { name: "Java", image: "./images/technologies/languages/java.png" },
+      {
+        name: "C",
+        image: "./images/technologies/languages/c.png",
+      },
+    ],
+  },
+  {
+    category: "DataBases",
+    skills: [
+      { name: "MongoDB", image: "./images/technologies/databases/mongodb.png" },
+      { name: "MySQL", image: "./images/technologies/databases/mysql.png" },
+      {
+        name: "Firebase",
+        image: "./images/technologies/databases/firebase.png",
+      },
+      {
+        name: "PostgreSQL",
+        image: "./images/technologies/databases/postgresql.png",
+      },
+    ],
+  },
+  {
+    category: "Web3/AI",
+    skills: [
+      {
+        name: "Solidity",
+        image: "./images/technologies/web3/solidity.png",
+      },
+      {
+        name: "Metamask",
+        image: "./images/technologies/web3/metamask.png",
+      },
+      {
+        name: "Langchain",
+        image: "./images/technologies/artificial_intelligence/lanchain.png",
+      },
+      {
+        name: "LangSmith",
+        image: "./images/technologies/artificial_intelligence/langsmith.png",
+      },
+      {
+        name: "OpenAI",
+        image: "./images/technologies/artificial_intelligence/openai.png",
+      },
+    ],
+  },
+  {
+    category: "Dev Tools",
+    skills: [
+      { name: "Github", image: "./images/technologies/software/github.png" },
+      { name: "VsCode", image: "../images/technologies/software/vscode.png" },
+      { name: "PyCharm", image: "./images/technologies/software/pycharm.png" },
+      { name: "Ubuntu", image: "./images/technologies/software/ubuntu.png" },
+      { name: "Postman", image: "./images/technologies/software/postman.png" },
+      { name: "DBeaver", image: "./images/technologies/software/dbeaver.png" },
+    ],
   },
 ];

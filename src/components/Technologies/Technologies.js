@@ -1,22 +1,20 @@
-import React from 'react';
-import { DiReact, DiNodejsSmall } from 'react-icons/di';
-import { SiHiveBlockchain, SiCplusplus } from 'react-icons/si';
-import { BsDatabaseFillGear } from 'react-icons/bs';
+import React from "react";
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
-} from '../../styles/GlobalComponents';
+} from "../../styles/GlobalComponents";
 import {
   List,
-  List2,
-  ListContainer,
   ListItem,
-  ListParagraph,
   ListTitle,
-  ListItem2,
-} from './TechnologiesStyles';
+  ListContentSkill,
+  ListContentSkillName,
+  ListContentSkillImage,
+  ListContent,
+} from "./TechnologiesStyles";
+import { Skills } from "../../constants/constants";
 
 const Technologies = () => (
   <Section id="tech">
@@ -27,82 +25,50 @@ const Technologies = () => (
       development.
     </SectionText>
     <List>
-      <ListItem>
-        <DiReact size={'4rem'} />
-        <ListContainer>
-          <ListTitle>Frontend</ListTitle>
-          <ListParagraph>
-            Experienced with
-            <br />
-            ReactJS
-            <br />
-            NextJS
-            <br />
-            Redux
-            <br />
-            GraphQL
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <DiNodejsSmall size={'4rem'} />
-        <ListContainer>
-          <ListTitle>Backend</ListTitle>
-          <ListParagraph>
-            Experienced with
-            <br />
-            NodeIS
-            <br />
-            ExpressJS
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <BsDatabaseFillGear size={'4rem'} />
-        <ListContainer>
-          <ListTitle>DataBases</ListTitle>
-          <ListParagraph>
-            Experienced with
-            <br />
-            MongoDB
-            <br />
-            MySQL
-            <br />
-            Firebase
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
+      {Skills.map((skillGroup) => (
+        <ListItem
+          whileHover={{
+            scale: 1.05,
+            transition: { duration: 0.4, ease: "easeInOut" },
+          }}
+        >
+          <ListTitle
+            initial={{ opacity: 0, x: -15 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { duration: 0.3, delay: 0, ease: "easeInOut" },
+            }}
+          >
+            {skillGroup.category}
+          </ListTitle>
+          <ListContent>
+            {skillGroup.skills.map((skill, i) => (
+              <ListContentSkill
+                key={i}
+                initial={{ opacity: 0, scale: 0.7 }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: i * 0.05,
+                    ease: "easeInOut",
+                  },
+                }}
+              >
+                <ListContentSkillImage
+                  src={skill.image}
+                  alt={skill.name}
+                  title={skill.name}
+                />
+                <ListContentSkillName>{skill.name}</ListContentSkillName>
+              </ListContentSkill>
+            ))}
+          </ListContent>
+        </ListItem>
+      ))}
     </List>
-    <List2>
-      <ListItem2>
-        <SiHiveBlockchain size={'4rem'} />
-        <ListContainer>
-          <ListTitle>Web3</ListTitle>
-          <ListParagraph>
-            Experienced with
-            <br />
-            Solidity
-            <br />
-            Metamask
-          </ListParagraph>
-        </ListContainer>
-      </ListItem2>
-      <ListItem2>
-        <SiCplusplus size={'4rem'} />
-        <ListContainer>
-          <ListTitle>Languages</ListTitle>
-          <ListParagraph>
-            Experienced with
-            <br />
-            C/C++
-            <br />
-            JavaScript
-            <br />
-            Java
-          </ListParagraph>
-        </ListContainer>
-      </ListItem2>
-    </List2>
   </Section>
 );
 

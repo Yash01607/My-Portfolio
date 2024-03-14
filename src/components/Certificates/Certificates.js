@@ -8,6 +8,7 @@ import {
   TitleContent,
   Img,
   CertificateImg,
+  ViewCertificateButton,
 } from "./certificateStyles";
 
 import AutoHorizontalScrollableText from "../AutoHorizontalScrollableText/AutoHorizontalScrollableText";
@@ -35,13 +36,18 @@ const Certificates = () => {
         }}
         show={showCertificate}
       >
-        <Button
+        <ViewCertificateButton
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 1, delay: 0.2, ease: "easeInOut" },
+          }}
           onClick={() => window.open(link, "_blank", "noopener,noreferrer")}
           target="_blank"
           certificate={showCertificate}
         >
           View Certificate
-        </Button>
+        </ViewCertificateButton>
         <CertificateImg
           src={showCertificate}
           alt={showCertificate}
@@ -52,6 +58,20 @@ const Certificates = () => {
         {certificates.map((c, i) => {
           return (
             <CertificateCard
+              initial={{ opacity: 0, scale: 0.7 }}
+              whileInView={{
+                opacity: 1,
+                scale: 1,
+                transition: {
+                  duration: 0.3,
+                  delay: i * 0.05,
+                  ease: "easeInOut",
+                },
+              }}
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3, ease: "easeInOut" },
+              }}
               title={`View ${c.title} Certificate`}
               key={i}
               onClick={() => {

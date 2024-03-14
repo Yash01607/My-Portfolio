@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Img = styled.img`
@@ -23,7 +24,7 @@ export const GridContainer = styled.section`
     padding-bottom: 0;
   }
 `;
-export const CertificateCard = styled.div`
+export const CertificateCard = styled(motion.div)`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
@@ -61,5 +62,34 @@ export const CardInfo = styled.div`
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem;
+  }
+`;
+
+export const ViewCertificateButton = styled(motion.div)`
+  width: 240px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0px 20px auto;
+  color: #fff;
+  background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
+  cursor: pointer;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 184px;
+    height: 48px;
+    font-size: 16px;
+    margin-bottom: 64px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    margin-bottom: 32px;
   }
 `;
