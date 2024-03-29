@@ -219,11 +219,12 @@ export const projects = [
     description:
       "Developed a user friendly Expense Tracker Web-App where users can digitally keep track of their monthly expenses.",
     image: "./images/expense-tracker.png",
-    tags: ["ReactJS", "NodeJS", "ExpressJS"],
+    tags: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
     tagImgs: [
       "./images/technologies/frontend/react.png",
       "./images/technologies/backend/nodejs.png",
       "./images/technologies/backend/express.png",
+      "./images/technologies/databases/mongodb.png",
     ],
     source: "https://github.com/Yash01607/Expense-Tracker",
     visit: "https://expense-tracker-t01y.onrender.com/",
@@ -232,27 +233,20 @@ export const projects = [
       {
         heading: "User Authentication",
         description: [
-          "Implemented secure Google OAuth for user registration and login, ensuring a reliable and user-friendly authentication process.",
-          "Also user can login through username and password. Achieved Security using JWT Auth.",
+          "JWT authentication for secure user login and session management.",
         ],
       },
       {
-        heading: "Memory Sharing",
+        heading: "Expense Management",
         description: [
-          "Users can share their memories by creating posts and attaching images to post.",
+          "User-friendly interface for adding and managing expenses.",
+          "User can view their expenses.",
         ],
       },
       {
-        heading: "News Feed",
+        heading: "Monthly Expense Graph",
         description: [
-          "Dynamic news feed displaying a chronological order of all shared memories.",
-        ],
-      },
-      {
-        heading: "Interactivity",
-        description: [
-          "Users can like others memories.",
-          "Commenting feature allows users to share thoughts.",
+          "Graphical representation of monthly expenses compared to salary.",
         ],
       },
     ],
