@@ -2,13 +2,12 @@ import BgAnimation from "./components/BackgroundAnimation/BackgroundAnimation";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import Technologies from "./components/Technologies/Technologies";
-import MyTimeline from "./components/MyTimeline/MyTimeline";
+import Education from "./components/Education/Education";
 import Certificates from "./components/Certificates/Certificates";
 import { Layout } from "./layout/Layout";
 import { Section } from "./styles/GlobalComponents";
 import "./App.css";
-// import OptimusPrime from './components/OptimusPrime/OptimusPrime';
-// import Coffee from './components/Coffee/Coffee';
+import ExperienceSection from "./components/Experience/Experience";
 
 function App() {
   return (
@@ -17,12 +16,12 @@ function App() {
         <Hero />
         <BgAnimation />
       </Section>
+      <ExperienceSection />
       <Projects />
       <Technologies />
-      <MyTimeline />
+      <Education />
       <Certificates />
     </Layout>
-    // <OptimusPrime></OptimusPrime>
   );
 }
 

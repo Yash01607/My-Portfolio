@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import React, { useState } from "react";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { DiCssdeck } from "react-icons/di";
 
-import ContactModal from '../ContactModal/ContactModal';
+import ContactModal from "../ContactModal/ContactModal";
 
 import {
   Container,
@@ -12,7 +12,7 @@ import {
   NavLink,
   SocialIcons,
   Span,
-} from './HeaderStyles';
+} from "./HeaderStyles";
 
 const Header = () => {
   const [openModal, setopenModal] = useState(false);
@@ -26,13 +26,13 @@ const Header = () => {
         <a
           href="/My-Portfolio/"
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            color: 'white',
-            marginBottom: '20px',
+            display: "flex",
+            alignItems: "center",
+            color: "white",
+            marginBottom: "20px",
           }}
         >
-          <DiCssdeck size={'3rem'} />
+          <DiCssdeck size={"3rem"} />
           <Span>My Portfolio</Span>
         </a>
       </Div1>
@@ -44,7 +44,7 @@ const Header = () => {
           <NavLink href="#tech">Technologies</NavLink>
         </li>
         <li>
-          <NavLink href="#my-timeline">My Timeline</NavLink>
+          <NavLink href="#education">Education</NavLink>
         </li>
         <li>
           <div>
@@ -60,14 +60,17 @@ const Header = () => {
         </li>
       </Div2>
       <Div3>
-        <SocialIcons href="https://github.com/Yash01607" target="_blank">
-          <AiFillGithub size={'3rem'} />
+        <SocialIcons
+          href="https://github.com/Yash01607"
+          target="_blank"
+        >
+          <AiFillGithub size={"3rem"} />
         </SocialIcons>
         <SocialIcons
           href="https://www.linkedin.com/in/yash-agrawal-a150991a5/"
           target="_blank"
         >
-          <AiFillLinkedin size={'3rem'} />
+          <AiFillLinkedin size={"3rem"} />
         </SocialIcons>
       </Div3>
     </Container>

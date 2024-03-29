@@ -27,7 +27,9 @@ export const TitleText = styled(motion.div)`
   padding-bottom: ${(props) => (props.main ? "0" : "3.6rem")};
   color: rgba(255, 255, 255, 0.7);
   display: flex;
-  align-items: space-between @media ${(props) => props.theme.breakpoints.md} {
+  align-items: space-between;
+
+  @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     font-size: 20px;
     line-height: 32px;
@@ -172,5 +174,48 @@ export const KnowMoreButton = styled(motion.div)`
     height: 32px;
     font-size: 14px;
     margin-bottom: 32px;
+  }
+`;
+
+export const SummaryModal = styled.div`
+  max-width: 800px;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 300;
+  padding: 3.6rem;
+  border-radius: 1rem;
+  animation: modal 0.2s linear;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 670px;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 16px;
+  }
+`;
+
+export const ListContent = styled(motion.ul)`
+  width: 100%;
+  list-style: circle inside;
+`;
+
+export const ListContentDesc = styled.li`
+  color: #e4e6e7;
+  font-style: 2rem;
+  line-height: 24px;
+  text-align: justify;
+  list-style-type: circle;
+  font-weight: 700;
+  margin: 10px 20px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) =>
+      props.border_top ? "10px 20px 5px 0" : "5px 20px 5px 0"};
   }
 `;

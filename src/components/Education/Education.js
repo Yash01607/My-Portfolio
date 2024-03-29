@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 
 import {
   CarouselButton,
@@ -10,23 +10,29 @@ import {
   CarouselItemText,
   CarouselItemTitle,
   CarouselMobileScrollNode,
-} from './AboutStyles';
+  // Span,
+} from "./EducationStyles";
 import {
   Section,
   SectionDivider,
-  SectionText,
+  // SectionText,
   SectionTitle,
-} from '../../styles/GlobalComponents';
-import { EducationDetails, aboutMeText } from '../../constants/constants';
+} from "../../styles/GlobalComponents";
+import { EducationDetails } from "../../constants/constants";
 
 const TOTAL_CAROUSEL_COUNT = EducationDetails.length;
 
-const About = () => {
+// const TOTAL_ABOUT_ME_TEXT_LENGTH = aboutMeText.reduce(
+//   (accumulator, text) => accumulator + text.length,
+//   0
+// );
+
+const Education = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
   const scroll = (node, left) => {
-    return node?.scrollTo({ left, behavior: 'smooth' });
+    return node?.scrollTo({ left, behavior: "smooth" });
   };
 
   const handleClick = (e, i) => {
@@ -58,15 +64,26 @@ const About = () => {
       scroll(carouselRef.current, 0);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
-    <Section id="about">
+    <Section id="education">
       <SectionDivider />
-      <SectionTitle main>About Me</SectionTitle>
-      <SectionText>{aboutMeText}</SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <SectionTitle main>Education</SectionTitle>
+      {/* {TOTAL_ABOUT_ME_TEXT_LENGTH > 300 ? (
+        <SectionText>
+          {aboutMeText[0]} ...
+          {<Span >Read More</Span>}
+        </SectionText>
+      ) : (
+        <SectionText>{aboutMeText}</SectionText>
+      )} */}
+
+      <CarouselContainer
+        ref={carouselRef}
+        onScroll={handleScroll}
+      >
         <>
           {EducationDetails.map((item, index) => (
             <CarouselMobileScrollNode
@@ -114,7 +131,7 @@ const About = () => {
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
-                <CarouselItemText>{item.designation} - </CarouselItemText>
+                <CarouselItemText>{item.designation}</CarouselItemText>
                 <CarouselItemText type="institute">
                   {item.institute}
                 </CarouselItemText>
@@ -138,9 +155,8 @@ const About = () => {
           );
         })}
       </CarouselButtons>
-      <SectionDivider />
     </Section>
   );
 };
 
-export default About;
+export default Education;

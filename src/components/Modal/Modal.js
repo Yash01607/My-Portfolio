@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ModalWrapper, ModalContainer } from "./ModalStyles.js";
 
 const Modal = (props) => {
+  useEffect(() => {
+    if (props.show) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [props.show]);
+
   if (props.show == null) {
     return null;
   }
+
   return (
     <ModalWrapper onClick={() => props.onClose()}>
       <ModalContainer
@@ -18,6 +27,7 @@ const Modal = (props) => {
             ease: "easeInOut",
           },
         }}
+        exit={{ opacity: 0, y: 30 }}
         onClick={(e) => e.stopPropagation()}
       >
         {props.children}

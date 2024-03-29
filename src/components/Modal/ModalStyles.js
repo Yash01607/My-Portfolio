@@ -15,6 +15,7 @@ export const ModalWrapper = styled.div`
   background-color: rgb(0, 0, 0, 0.7);
   display: flex;
   animation: modal 0.2s linear;
+  overflow: auto;
 `;
 
 export const ModalContainer = styled(motion.div)`
@@ -22,6 +23,12 @@ export const ModalContainer = styled(motion.div)`
   cursor: default;
   width: 80%;
   max-width: 700px;
+  max-height: 80%;
+  background-color: #0f1624;
+  color: #f2f5f7;
+  box-shadow: 3px 3px 20px #797d7c;
+  overflow-y: auto;
+  scrollbar-width: none;
 
   @media ${(props) => props.theme.breakpoints.md} {
     top: 32px;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
@@ -6,6 +6,7 @@ export const CarouselContainer = styled.ul`
   padding: 0rem;
   list-style: none;
   display: flex;
+  justify-content: flex-start;
   /* overflow-x: hidden; */
 
   margin-left: 32px;
@@ -110,10 +111,11 @@ export const CarouselItemText = styled.p`
   line-height: 22px;
   letter-spacing: 0.02em;
   color: ${(props) =>
-    props.type === 'institute'
-      ? 'rgba(255, 255, 255)'
-      : 'rgba(255, 255, 255, 0.5)'};
+    props.type === "institute"
+      ? "rgba(255, 255, 255)"
+      : "rgba(255, 255, 255, 0.5)"};
   padding-right: 16px;
+  height: 50px ;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 12px;
@@ -161,4 +163,8 @@ export const CarouselButtonDot = styled.div`
   margin: auto;
   width: 3px;
   height: 3px;
+`;
+
+export const Span = styled.span`
+  cursor: pointer;
 `;
