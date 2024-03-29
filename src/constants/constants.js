@@ -224,7 +224,7 @@ export const Skills = [
     category: "DevTools",
     skills: [
       { name: "Github", image: "./images/technologies/software/github.png" },
-      { name: "VsCode", image: "../images/technologies/software/vscode.png" },
+      { name: "VsCode", image: "./images/technologies/software/vscode.png" },
       { name: "PyCharm", image: "./images/technologies/software/pycharm.png" },
       { name: "Ubuntu", image: "./images/technologies/software/ubuntu.png" },
       { name: "Postman", image: "./images/technologies/software/postman.png" },
