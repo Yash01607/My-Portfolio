@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
@@ -295,4 +296,13 @@ export const LinkIconImg = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     height: ${({ large }) => (large ? "32px" : "16px")};
   }
+`;
+
+export const TechTag = styled(motion.span)`
+  background-color: #003366;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  margin: auto 5px;
 `;

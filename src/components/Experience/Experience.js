@@ -16,6 +16,7 @@ import {
   Section,
   SectionDivider,
   SectionTitle,
+  TechTag,
 } from "../../styles/GlobalComponents";
 import { Experience } from "../../constants/constants";
 
@@ -94,13 +95,23 @@ const ExperienceSection = () => {
                 >
                   <strong>
                     Tech Stack:{" "}
-                    {exp.techStack.map((tech, i) =>
-                      i === exp.techStack.length - 1 ? (
-                        <span key={i}>{tech} </span>
-                      ) : (
-                        <span key={i}>{tech}, </span>
-                      )
-                    )}
+                    {exp.techStack.map((tech, j) => (
+                      <TechTag
+                        key={j}
+                        initial={{ opacity: 0, scale: 0.7 }}
+                        whileInView={{
+                          opacity: 1,
+                          scale: 1,
+                          transition: {
+                            duration: 0.5,
+                            delay: j * 0.05 + i * 0.3,
+                            ease: "easeInOut",
+                          },
+                        }}
+                      >
+                        {tech}{" "}
+                      </TechTag>
+                    ))}
                   </strong>
                 </ListContentDesc>
               </ListContent>

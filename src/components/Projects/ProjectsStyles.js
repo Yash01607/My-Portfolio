@@ -46,7 +46,7 @@ export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
   color: #9cc9e3;
-  padding: 0.5rem 0;
+  padding: 20px 0;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
 `;
 
@@ -132,7 +132,7 @@ export const HoverListItem = styled(motion.a)`
   justify-content: center;
   width: 70%;
   text-align: center;
-  background-color: #ec553c;
+  background-color: #003366;
   margin: 2rem auto;
   padding: 1.5rem;
   align-items: center;

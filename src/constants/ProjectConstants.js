@@ -144,7 +144,7 @@ export const projects = [
   {
     title: "SimpliShopee",
     description:
-      "Developed a production ready E-commerce website using Django and ReactJS",
+      "Developed a production ready E-commerce website using Django and ReactJS from scratch",
     image: "./images/projects/simplishopee.png",
     tags: ["ReactJS", "Django", "ReduxJS", "BootStrap"],
     tagImgs: [

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 import {
   GridContainer,
@@ -31,17 +32,6 @@ import { FaArrowRight } from "react-icons/fa";
 
 import "./ProjectAnimation.css";
 import Modal from "../Modal/Modal";
-
-// Flip animations: https://codepen.io/designfenix/pen/RwKPapa
-// 3d card:  https://codepen.io/gayane-gasparyan/pen/wvxewXO
-// interesting....: https://codepen.io/petegarvin1/pen/bGBGvvK  ||  https://codepen.io/cobra_winfrey/pen/OJXJeod  ||  https://codepen.io/cobra_winfrey/pen/OJXJeod
-// Make every card glass like: https://codepen.io/_rahul/pen/NWXjOXW
-// Boook thing: https://codepen.io/Maza-designDev/pen/KKdmyGb
-// For eductaion: https://codepen.io/thebabydino/pen/VwpYxba
-// fro icon on know more modal: https://codepen.io/luisoms/pen/PoGGRKp
-// for hobbies: https://codepen.io/chriscoyier/pen/NWMQQoL
-
-// Project Card -> 3d animation: list -> Take tour, View Details, Visit Site, View Code
 
 const Projects = () => {
   const [showProjectDetails, setShowProjectDetails] = useState(null);
@@ -99,7 +89,15 @@ const Projects = () => {
       </Modal>
       <GridContainer>
         {projects.map((p, i) => (
-          <div class="card">
+          <motion.div
+            class="card"
+            initial={{ scale: 0.7, opacity: 0 }}
+            whileInView={{
+              scale: 1,
+              transition: { duration: 0.5 },
+              opacity: 1,
+            }}
+          >
             <div class="wrapper">
               <TitleContent>
                 <a
@@ -114,7 +112,6 @@ const Projects = () => {
               <CardInfo className="card-info">
                 {p.description.substring(0, 150)}
               </CardInfo>
-              {/* <TitleContent>Tech Stack</TitleContent> */}
               <Hr />
               <TagList>
                 {p.tagImgs.map((t, i) => {
@@ -176,7 +173,7 @@ const Projects = () => {
                 </HoverListItem> */}
               </HoverList>
             </div>
-          </div>
+          </motion.div>
         ))}
       </GridContainer>
     </Section>
