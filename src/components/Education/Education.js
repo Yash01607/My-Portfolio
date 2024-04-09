@@ -68,7 +68,7 @@ const Education = () => {
   }, []);
 
   return (
-    <Section id="my-timeline">
+    <Section id="education">
       <SectionDivider />
       <SectionTitle main>Education</SectionTitle>
       {/* {TOTAL_ABOUT_ME_TEXT_LENGTH > 300 ? (
@@ -80,7 +80,10 @@ const Education = () => {
         <SectionText>{aboutMeText}</SectionText>
       )} */}
 
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <CarouselContainer
+        ref={carouselRef}
+        onScroll={handleScroll}
+      >
         <>
           {EducationDetails.map((item, index) => (
             <CarouselMobileScrollNode

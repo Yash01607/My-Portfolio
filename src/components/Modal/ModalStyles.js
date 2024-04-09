@@ -26,7 +26,7 @@ export const ModalContainer = styled(motion.div)`
   max-height: 80%;
   background-color: #0f1624;
   color: #f2f5f7;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  box-shadow: 3px 3px 20px #797d7c;
   overflow-y: auto;
   scrollbar-width: none;
 

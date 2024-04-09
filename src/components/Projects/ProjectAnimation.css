@@ -1,6 +1,6 @@
 :root {
   --card-height: 400px;
-  --card-width: calc(var(--card-height) / 1.5);
+  --card-width: calc(var(--card-height) / 1.3);
 }
 * {
   box-sizing: border-box;
@@ -20,21 +20,16 @@
   margin: 2rem auto;
 }
 
-/* .cover-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
 .wrapper {
   transition: all 0.5s;
   position: absolute;
   width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
 .card:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .card:hover .wrapper {

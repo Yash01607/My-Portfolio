@@ -14,8 +14,8 @@ export const LeftSection = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-
     margin: 0 auto;
+    padding-top: 0%;
   }
 `;
 
@@ -183,9 +183,7 @@ export const SummaryModal = styled.div`
   line-height: 40px;
   font-weight: 300;
   padding: 3.6rem;
-  background-color: rgb(255, 255, 255);
   border-radius: 1rem;
-  color: rgba(0, 0, 0, 0.7);
   animation: modal 0.2s linear;
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -199,5 +197,25 @@ export const SummaryModal = styled.div`
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
+  }
+`;
+
+export const ListContent = styled(motion.ul)`
+  width: 100%;
+  list-style: circle inside;
+`;
+
+export const ListContentDesc = styled.li`
+  color: #e4e6e7;
+  font-style: 2rem;
+  line-height: 24px;
+  text-align: justify;
+  list-style-type: circle;
+  font-weight: 700;
+  margin: 10px 20px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) =>
+      props.border_top ? "10px 20px 5px 0" : "5px 20px 5px 0"};
   }
 `;
