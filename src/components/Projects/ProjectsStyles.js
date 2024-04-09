@@ -5,12 +5,6 @@ export const Img = styled.img`
   width: 40%;
   object-fit: cover;
   overflow: hidden;
-  margin-bottom: 10px;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
-    margin-bottom: 20px;
-  }
 `;
 
 export const GridContainer = styled.section`
@@ -46,7 +40,7 @@ export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
   color: #9cc9e3;
-  padding: 20px 0;
+  padding: 0.5rem 0;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
 `;
 
@@ -103,22 +97,14 @@ export const ExternalLinks = styled.a`
 export const TagList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  justify-content: ${(props) => (props.summary ? "flex-start" : "center")};
+  justify-content: space-around;
   align-items: center;
-  margin: 30px auto 10px auto;
-  margin: ${(props) =>
-    props.summary ? "10px auto 10px auto" : "30px auto 10px auto"};
-`;
-
-export const TagSpan = styled.span`
-  margin: 3px 2px 3px 2px;
+  padding: 2rem;
 `;
 
 export const TagImg = styled.img`
   width: 30px;
   height: 30px;
-  margin: 0 10px 0 0;
 `;
 
 export const HoverList = styled(motion.ul)`
@@ -132,15 +118,11 @@ export const HoverListItem = styled(motion.a)`
   justify-content: center;
   width: 70%;
   text-align: center;
-  background-color: #003366;
+  background-color: #ec553c;
   margin: 2rem auto;
   padding: 1.5rem;
   align-items: center;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
-
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 export const ArrowSpan = styled(motion.span)`
@@ -194,21 +176,10 @@ export const SummaryHead = styled(motion.div)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    flex-direction: column-reverse;
-  }
 `;
 
 export const SummaryList = styled(motion.div)`
   padding: 15px 0px;
   border-top: ${(props) =>
     props.border_top ? "2px solid rgba(255, 255, 255, 1)" : ""};
-`;
-
-export const ProjectTitle = styled(motion.h1)`
-  padding-bottom: 15px;
-  margin: 0 0 0 0;
-  margin-right: 20px;
-  border-bottom: 2px solid rgba(255, 255, 255, 1);
 `;

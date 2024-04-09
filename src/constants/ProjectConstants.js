@@ -4,9 +4,8 @@ export const projects = [
     description:
       "Developed a MERN Stack E-commerce Web Application for agricultural products.",
     image: "./images/agrotech.png",
-    tags: ["ReactJS", "ReduxJS", "NodeJS", "ExpressJS", "MongoDB", "Socket.IO"],
-    tagImgs: [
-      "./images/technologies/frontend/react.png",
+    tags: [
+      "/images/technologies/frontend/react.png",
       "./images/technologies/frontend/redux.png",
       "./images/technologies/backend/nodejs.png",
       "./images/technologies/backend/express.png",
@@ -55,13 +54,12 @@ export const projects = [
   {
     title: "CrowdWallet",
     description:
-      "Crowd Wallet facilitates project crowdfunding, utilizing Blockchain Technology for Entrepenaurs.",
+      "Crowd Wallet facilitates project crowdfunding, utilizing Blockchain Technology for transparent fund management. It features a voting system for contributors to express approval or disapproval of spending requests.",
     image: "./images/crowdwallet.png",
-    tags: ["NextJS", "Solidity", "Metamask"],
-    tagImgs: [
+    tags: [
       "./images/technologies/frontend/next-js.png",
       "./images/technologies/web3/solidity.png",
-      "./images/technologies/web3/metamask.png",
+      "Web3",
     ],
     source: "https://github.com/Yash01607/CrowdCoin",
     visit: "https://crowd-coin-yash01607.vercel.app/",
@@ -100,13 +98,12 @@ export const projects = [
   {
     title: "Memoreaum",
     description:
-      "Created a user-friendly social media app with the MERN stack, enabling seamless sharing of moments and events.",
+      "Created a user-friendly social media app with the MERN stack, enabling seamless sharing of moments and events. Users can like and comment on shared memories.",
     image: "./images/memoreaum.png",
-    tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
-    tagImgs: [
+    tags: [
       "./images/technologies/databases/mongodb.png",
       "./images/technologies/backend/express.png",
-      "./images/technologies/frontend/react.png",
+      "/images/technologies/frontend/react.png",
       "./images/technologies/backend/nodejs.png",
     ],
     source: "https://github.com/Yash01607/Memoreaum",
@@ -142,76 +139,26 @@ export const projects = [
     ],
   },
   {
-    title: "SimpliShopee",
+    title: "Expense Tracker",
     description:
-      "Developed a production ready E-commerce website using Django and ReactJS from scratch",
-    image: "./images/projects/simplishopee.png",
-    tags: ["ReactJS", "Django", "ReduxJS", "BootStrap"],
-    tagImgs: [
-      "./images/technologies/frontend/react.png",
-      "./images/technologies/backend/django.png",
-      "./images/technologies/frontend/redux.png",
-      "./images/technologies/frontend/bootstrap.png",
+      "Developed a user friendly Expense Tracker Web-App where users can digitally keep track of their monthly expenses.",
+    image: "./images/expense-tracker.png",
+    tags: [
+      "/images/technologies/frontend/react.png",
+      "./images/technologies/backend/nodejs.png",
+      "./images/technologies/backend/express.png",
+      "Mongoose",
     ],
-    source: "https://github.com/Yash01607/SimpliShopee",
-    visit: "https://simplishopee.pythonanywhere.com/",
+    source: "https://github.com/Yash01607/Expense-Tracker",
+    visit: "https://expense-tracker-t01y.onrender.com/",
     id: 4,
-    details: [
-      {
-        heading: "User Authentication and Authorisation",
-        description: [
-          "Secure user registration and login functionalities.",
-          "Role-based access control to manage user permissions.",
-        ],
-      },
-      {
-        heading: "Product Management",
-        description: [
-          "Intuitive product catalog with detailed product information.",
-          "Support for product categories, tags(Sub Categories) and filters.",
-          "Product search functionality.",
-        ],
-      },
-      {
-        heading: "Shopping Cart",
-        description: [
-          "User-friendly shopping cart for adding, updating, and removing items.",
-          "Real-time cart updates without page refresh using React and Redux.",
-        ],
-      },
-      {
-        heading: "Checkout Process",
-        description: [
-          "Seamless and secure checkout experience.",
-          "Order summary and confirmation.",
-        ],
-      },
-      {
-        heading: "Order Management",
-        description: [
-          "Order history and tracking for users.",
-          "Order status updates.",
-        ],
-      },
-      {
-        heading: "Admin Dashboard",
-        description: [
-          "Comprehensive admin panel for managing products, orders, and users.",
-        ],
-      },
-      {
-        heading: "Responsive Design",
-        description: [
-          "Mobile-friendly design for optimal user experience across devices.",
-        ],
-      },
-      {
-        heading: "Security",
-        description: [
-          "HTTPS implementation for secure data transmission.",
-          "Protection against common web vulnerabilities.",
-        ],
-      },
+    summary: [
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
     ],
   },
   {
@@ -219,36 +166,45 @@ export const projects = [
     description:
       "Developed a user friendly Expense Tracker Web-App where users can digitally keep track of their monthly expenses.",
     image: "./images/expense-tracker.png",
-    tags: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
-    tagImgs: [
-      "./images/technologies/frontend/react.png",
+    tags: [
+      "/images/technologies/frontend/react.png",
       "./images/technologies/backend/nodejs.png",
       "./images/technologies/backend/express.png",
-      "./images/technologies/databases/mongodb.png",
+      "Mongoose",
+    ],
+    source: "https://github.com/Yash01607/Expense-Tracker",
+    visit: "https://expense-tracker-t01y.onrender.com/",
+    id: 5,
+    summary: [
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+    ],
+  },
+  {
+    title: "Expense Tracker",
+    description:
+      "Developed a user friendly Expense Tracker Web-App where users can digitally keep track of their monthly expenses.",
+    image: "./images/expense-tracker.png",
+    tags: [
+      "/images/technologies/frontend/react.png",
+      "./images/technologies/backend/nodejs.png",
+      "./images/technologies/backend/express.png",
+      "Mongoose",
     ],
     source: "https://github.com/Yash01607/Expense-Tracker",
     visit: "https://expense-tracker-t01y.onrender.com/",
     id: 6,
-    details: [
-      {
-        heading: "User Authentication",
-        description: [
-          "JWT authentication for secure user login and session management.",
-        ],
-      },
-      {
-        heading: "Expense Management",
-        description: [
-          "User-friendly interface for adding and managing expenses.",
-          "User can view their expenses.",
-        ],
-      },
-      {
-        heading: "Monthly Expense Graph",
-        description: [
-          "Graphical representation of monthly expenses compared to salary.",
-        ],
-      },
+    summary: [
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
+      "Developed a MERN Stack E-commerce Web Application for agricultural products",
     ],
   },
 ];

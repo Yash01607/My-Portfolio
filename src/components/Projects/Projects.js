@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 
 import {
   GridContainer,
@@ -16,10 +15,8 @@ import {
   ListContent,
   ListContentDesc,
   SummaryList,
-  ProjectTitle,
   Img,
   SummaryHead,
-  TagSpan,
 } from "./ProjectsStyles";
 
 import {
@@ -27,19 +24,27 @@ import {
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { projects } from "../../constants/ProjectConstants";
+import { projects } from "../../constants/projectConstants";
 import { FaArrowRight } from "react-icons/fa";
 
 import "./ProjectAnimation.css";
 import Modal from "../Modal/Modal";
 
+// Flip animations: https://codepen.io/designfenix/pen/RwKPapa
+// 3d card:  https://codepen.io/gayane-gasparyan/pen/wvxewXO
+// interesting....: https://codepen.io/petegarvin1/pen/bGBGvvK  ||  https://codepen.io/cobra_winfrey/pen/OJXJeod  ||  https://codepen.io/cobra_winfrey/pen/OJXJeod
+// Make every card glass like: https://codepen.io/_rahul/pen/NWXjOXW
+// Boook thing: https://codepen.io/Maza-designDev/pen/KKdmyGb
+// For eductaion: https://codepen.io/thebabydino/pen/VwpYxba
+// fro icon on know more modal: https://codepen.io/luisoms/pen/PoGGRKp
+// for hobbies: https://codepen.io/chriscoyier/pen/NWMQQoL
+
+// Project Card -> 3d animation: list -> Take tour, View Details, Visit Site, View Code
+
 const Projects = () => {
   const [showProjectDetails, setShowProjectDetails] = useState(null);
   return (
-    <Section
-      nopadding
-      id={"projects"}
-    >
+    <Section nopadding id={"projects"}>
       <SectionDivider />
       <SectionTitle main>Projects</SectionTitle>
       <Modal
@@ -52,17 +57,10 @@ const Projects = () => {
           <SummaryModal>
             <SummaryHead>
               <div>
-                <ProjectTitle>{showProjectDetails.title}</ProjectTitle>
-
-                <TagList summary>
-                  <h3>Tech Stack:</h3>
+                <h1>{showProjectDetails.title}</h1>
+                <TagList>
                   {showProjectDetails.tags.map((t, i) => {
-                    return (
-                      <TagSpan>
-                        {t}
-                        {showProjectDetails.tags.length - 1 === i ? "." : ","}
-                      </TagSpan>
-                    );
+                    return <TagImg src={t} alt={t} key={i}></TagImg>;
                   })}
                 </TagList>
               </div>
@@ -89,22 +87,10 @@ const Projects = () => {
       </Modal>
       <GridContainer>
         {projects.map((p, i) => (
-          <motion.div
-            className="card"
-            initial={{ scale: 0.7, opacity: 0 }}
-            whileInView={{
-              scale: 1,
-              transition: { duration: 0.5 },
-              opacity: 1,
-            }}
-          >
-            <div className="wrapper">
+          <div class="card">
+            <div class="wrapper">
               <TitleContent>
-                <a
-                  href={p.visit}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={p.visit} target="_blank" rel="noreferrer">
                   <HeaderThree title={"true"}>{p.title}</HeaderThree>
                 </a>
                 <Hr />
@@ -112,20 +98,17 @@ const Projects = () => {
               <CardInfo className="card-info">
                 {p.description.substring(0, 150)}
               </CardInfo>
-              <Hr />
-              <TagList>
-                {p.tagImgs.map((t, i) => {
-                  return (
-                    <TagImg
-                      src={t}
-                      alt={t}
-                      key={i}
-                    ></TagImg>
-                  );
-                })}
-              </TagList>
+              <div>
+                {/* <TitleContent>Tech Stack</TitleContent> */}
+                <TagList>
+                  {p.tags.map((t, i) => {
+                    return <TagImg src={t} alt={t} key={i}></TagImg>;
+                  })}
+                </TagList>
+              </div>
             </div>
-            <div className="hover_list">
+            {/* <div class="title">{p.title}</div> */}
+            <div class="hover_list">
               <HoverList>
                 <HoverListItem
                   initial={{ scale: 1 }}
@@ -161,7 +144,7 @@ const Projects = () => {
                     <FaArrowRight />
                   </ArrowSpan>
                 </HoverListItem>
-                {/* <HoverListItem
+                <HoverListItem
                   initial={{ scale: 1 }}
                   whileHover={{ scale: 1.1 }}
                 >
@@ -169,10 +152,10 @@ const Projects = () => {
                   <ArrowSpan>
                     <FaArrowRight />
                   </ArrowSpan>
-                </HoverListItem> */}
+                </HoverListItem>
               </HoverList>
             </div>
-          </motion.div>
+          </div>
         ))}
       </GridContainer>
     </Section>

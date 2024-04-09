@@ -234,7 +234,6 @@ export const ListItem = styled(motion.li)`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 20px;
-    flex-direction: column;
   }
 `;
 export const ListItemImage = styled.img`
@@ -252,9 +251,9 @@ export const ListItemImage = styled.img`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
-    height: auto;
-    margin: 10px auto;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
   }
 `;
 
@@ -304,7 +303,7 @@ export const ListItemDesignation = styled(motion.h4)`
   font-size: 20px;
   line-height: 26px;
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.5);
   width: 100%;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -322,9 +321,6 @@ export const ListItemDesignation = styled(motion.h4)`
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.02em;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 10px;
   }
 `;
 

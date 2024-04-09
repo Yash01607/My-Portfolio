@@ -8,6 +8,8 @@ import { Layout } from "./layout/Layout";
 import { Section } from "./styles/GlobalComponents";
 import "./App.css";
 import ExperienceSection from "./components/Experience/Experience";
+// import OptimusPrime from './components/OptimusPrime/OptimusPrime';
+// import Coffee from './components/Coffee/Coffee';
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
       <Education />
       <Certificates />
     </Layout>
+    // <OptimusPrime></OptimusPrime>
   );
 }
 

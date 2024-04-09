@@ -10,8 +10,6 @@ import {
   IntroText,
   KnowMoreButton,
   SummaryModal,
-  ListContent,
-  ListContentDesc,
 } from "./HeroStyles";
 import {
   Titles,
@@ -36,11 +34,9 @@ const Hero = () => {
           show={showSummary}
         >
           <SummaryModal>
-            <ListContent>
-              {aboutMeText.map((text, i) => (
-                <ListContentDesc key={i}>{text}</ListContentDesc>
-              ))}
-            </ListContent>
+            {aboutMeText.map((text, i) => (
+              <p key={i}>{text}</p>
+            ))}
           </SummaryModal>
         </Modal>
 
