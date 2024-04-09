@@ -42,15 +42,11 @@ const ExperienceSection = () => {
       <List>
         {Experience.map((exp, i) => (
           <ListItem
-            initial={{ scale: 0.7, opacity: 0 }}
+            initial={{ x: -50, opacity: 0 }}
             whileInView={{
-              scale: 1,
+              x: 0,
               transition: { duration: 0.5, delay: 0.3 * i },
               opacity: 1,
-            }}
-            whileHover={{
-              scale: 1.05,
-              transition: { duration: 0.5, ease: "easeInOut" },
             }}
           >
             <ListItemImage
@@ -73,46 +69,16 @@ const ExperienceSection = () => {
 
               <ListContent>
                 {exp.desc.map((desc, i) => (
-                  <ListContentDesc
-                    key={i}
-                    initial={{ opacity: 0, scale: 0.7 }}
-                    whileInView={{
-                      opacity: 1,
-                      scale: 1,
-                      transition: {
-                        duration: 0.5,
-                        delay: i * 0.05,
-                        ease: "easeInOut",
-                      },
-                    }}
-                  >
-                    {desc}
-                  </ListContentDesc>
+                  <ListContentDesc key={i}>{desc}</ListContentDesc>
                 ))}
                 <ListContentDesc
                   border_top
                   key={"TechSTack"}
                 >
-                  <strong>
-                    Tech Stack:{" "}
-                    {exp.techStack.map((tech, j) => (
-                      <TechTag
-                        key={j}
-                        initial={{ opacity: 0, scale: 0.7 }}
-                        whileInView={{
-                          opacity: 1,
-                          scale: 1,
-                          transition: {
-                            duration: 0.5,
-                            delay: j * 0.05 + i * 0.3,
-                            ease: "easeInOut",
-                          },
-                        }}
-                      >
-                        {tech}{" "}
-                      </TechTag>
-                    ))}
-                  </strong>
+                  <span>Tech Stack: </span>
+                  {exp.techStack.map((tech, j) => (
+                    <TechTag key={j}>{tech} </TechTag>
+                  ))}
                 </ListContentDesc>
               </ListContent>
             </ListItemDetails>

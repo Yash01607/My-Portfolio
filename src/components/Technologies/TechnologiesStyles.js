@@ -148,7 +148,7 @@ export const ListTitle = styled(motion.h4)`
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.02em;
-    margin:auto;
+    margin: auto;
     margin-bottom: 15px;
   }
 `;

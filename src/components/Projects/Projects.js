@@ -90,7 +90,7 @@ const Projects = () => {
       <GridContainer>
         {projects.map((p, i) => (
           <motion.div
-            class="card"
+            className="card"
             initial={{ scale: 0.7, opacity: 0 }}
             whileInView={{
               scale: 1,
@@ -98,7 +98,7 @@ const Projects = () => {
               opacity: 1,
             }}
           >
-            <div class="wrapper">
+            <div className="wrapper">
               <TitleContent>
                 <a
                   href={p.visit}
@@ -125,8 +125,7 @@ const Projects = () => {
                 })}
               </TagList>
             </div>
-            {/* <div class="title">{p.title}</div> */}
-            <div class="hover_list">
+            <div className="hover_list">
               <HoverList>
                 <HoverListItem
                   initial={{ scale: 1 }}

@@ -4,6 +4,10 @@ import { DiCssdeck } from "react-icons/di";
 
 import ContactModal from "../ContactModal/ContactModal";
 
+import useWindowDimensions from "../../hooks/useWindowDimensions";
+
+import Sidebar from "../Sidebar/Sidebar";
+
 import {
   Container,
   Div1,
@@ -17,11 +21,14 @@ import {
 const Header = () => {
   const [openModal, setopenModal] = useState(false);
 
+  const { width } = useWindowDimensions();
+
   const modalOpenerHandler = () => {
     setopenModal(true);
   };
   return (
     <Container>
+      {width < 1000 && <Sidebar />}
       <Div1>
         <a
           href="/My-Portfolio/"
@@ -36,29 +43,31 @@ const Header = () => {
           <Span>My Portfolio</Span>
         </a>
       </Div1>
-      <Div2>
-        <li>
-          <NavLink href="#projects">Projects</NavLink>
-        </li>
-        <li>
-          <NavLink href="#tech">Technologies</NavLink>
-        </li>
-        <li>
-          <NavLink href="#education">Education</NavLink>
-        </li>
-        <li>
-          <div>
-            <NavLink onClick={modalOpenerHandler}>Contact</NavLink>
-            <ContactModal
-              onClose={() => {
-                setopenModal(false);
-              }}
-              show={openModal}
-              setShow={setopenModal}
-            />
-          </div>
-        </li>
-      </Div2>
+      {width >= 1000 && (
+        <Div2>
+          <li>
+            <NavLink href="#projects">Projects</NavLink>
+          </li>
+          <li>
+            <NavLink href="#tech">Technologies</NavLink>
+          </li>
+          <li>
+            <NavLink href="#education">Education</NavLink>
+          </li>
+          <li>
+            <div>
+              <NavLink onClick={modalOpenerHandler}>Contact</NavLink>
+              <ContactModal
+                onClose={() => {
+                  setopenModal(false);
+                }}
+                show={openModal}
+                setShow={setopenModal}
+              />
+            </div>
+          </li>
+        </Div2>
+      )}
       <Div3>
         <SocialIcons
           href="https://github.com/Yash01607"
