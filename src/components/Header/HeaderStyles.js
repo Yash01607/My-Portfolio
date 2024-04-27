@@ -3,22 +3,42 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin: 20px 40px;
+  max-width: 100%;
 `;
+
+export const Div1Div3Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+`;
+
 export const Div1 = styled.div`
   min-width: 160px;
 `;
-export const Div2 = styled.div`
-  width: 50%;
+export const Div1Link = styled.a`
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+`;
+export const Div2 = styled.ul`
+  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin: auto;
 `;
 export const Div3 = styled.div`
   min-width: 160px;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    min-width: 100px;
+  }
 `;
 
 export const NavLink = styled.a`

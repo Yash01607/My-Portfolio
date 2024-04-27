@@ -47,7 +47,7 @@ export const Experience = [
       " OpenAI",
       " LangChain",
       " ReactJS",
-      " MySQL.",
+      " MySQL",
     ],
   },
   {
@@ -62,7 +62,7 @@ export const Experience = [
       "Integrated Customizable Coupons and Promotions Mechanism.",
       "Worked on building custom Plugins to modify behavior of Vendure.",
     ],
-    techStack: ["ReactJS", " Vendure", " MySQL", " GraphQL", " Stripe."],
+    techStack: ["ReactJS", "Vendure", " MySQL", " GraphQL", " Stripe"],
   },
 ];
 

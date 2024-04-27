@@ -11,6 +11,7 @@ import {
   ListContent,
   ListItemImage,
   ListItemCompanySpan,
+  ListContentDescTech,
 } from "./ExperienceStyles";
 import {
   Section,
@@ -71,15 +72,22 @@ const ExperienceSection = () => {
                 {exp.desc.map((desc, i) => (
                   <ListContentDesc key={i}>{desc}</ListContentDesc>
                 ))}
-                <ListContentDesc
+
+                <ListContentDescTech
                   border_top
                   key={"TechSTack"}
                 >
-                  <span>Tech Stack: </span>
+                  <TechTag
+                    key={"yash"}
+                    red
+                  >
+                    Tech Stack{" "}
+                  </TechTag>
+                  :
                   {exp.techStack.map((tech, j) => (
                     <TechTag key={j}>{tech} </TechTag>
                   ))}
-                </ListContentDesc>
+                </ListContentDescTech>
               </ListContent>
             </ListItemDetails>
           </ListItem>

@@ -36,10 +36,7 @@ import Modal from "../Modal/Modal";
 const Projects = () => {
   const [showProjectDetails, setShowProjectDetails] = useState(null);
   return (
-    <Section
-      nopadding
-      id={"projects"}
-    >
+    <Section id={"projects"}>
       <SectionDivider />
       <SectionTitle main>Projects</SectionTitle>
       <Modal

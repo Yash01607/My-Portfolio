@@ -341,6 +341,9 @@ export const ListContentDesc = styled.li`
   list-style-type: circle;
   margin-left: 20px;
   font-weight: 700;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
 
   margin-top: ${(props) => (props.border_top ? "10px" : "")};
 
@@ -376,5 +379,32 @@ export const ListItemCompanySpan = styled.span`
     line-height: 18px;
     letter-spacing: 0.02em;
     margin: 0;
+  }
+`;
+
+export const ListContentDescTech = styled.li`
+  color: #e4e6e7;
+  font-style: 2rem;
+  line-height: 24px;
+  text-align: justify;
+  list-style-type: circle;
+  margin-left: 20px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-top: ${(props) => (props.border_top ? "10px" : "")};
+
+  padding: ${(props) =>
+    props.border_top ? "10px 20px 5px 0" : "5px 20px 5px 0"};
+
+  border-top: ${(props) =>
+    props.border_top ? "2px solid rgba(255, 255, 255, 1)" : ""};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) =>
+      props.border_top ? "10px 20px 5px 0" : "5px 20px 5px 0"};
   }
 `;

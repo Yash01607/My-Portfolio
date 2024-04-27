@@ -6,8 +6,6 @@ import ContactModal from "../ContactModal/ContactModal";
 
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
-import Sidebar from "../Sidebar/Sidebar";
-
 import {
   Container,
   Div1,
@@ -16,6 +14,8 @@ import {
   NavLink,
   SocialIcons,
   Span,
+  Div1Link,
+  Div1Div3Wrapper,
 } from "./HeaderStyles";
 
 const Header = () => {
@@ -28,33 +28,46 @@ const Header = () => {
   };
   return (
     <Container>
-      {width < 1000 && <Sidebar />}
-      <Div1>
-        <a
-          href="/My-Portfolio/"
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "white",
-            marginBottom: "20px",
-          }}
-        >
-          <DiCssdeck size={"3rem"} />
-          <Span>My Portfolio</Span>
-        </a>
-      </Div1>
-      {width >= 1000 && (
+      <Div1Div3Wrapper>
+        <Div1>
+          <Div1Link href="/My-Portfolio/">
+            <DiCssdeck size={"3rem"} />
+            <Span>My Portfolio</Span>
+          </Div1Link>
+        </Div1>
+        <Div3>
+          <SocialIcons
+            href="https://github.com/Yash01607"
+            target="_blank"
+          >
+            <AiFillGithub size={"3rem"} />
+          </SocialIcons>
+          <SocialIcons
+            href="https://www.linkedin.com/in/yash-agrawal-a150991a5/"
+            target="_blank"
+          >
+            <AiFillLinkedin size={"3rem"} />
+          </SocialIcons>
+        </Div3>
+      </Div1Div3Wrapper>
+      {width > 800 && (
         <Div2>
-          <li>
-            <NavLink href="#projects">Projects</NavLink>
+          <li key="Experience">
+            <NavLink href="#projects">Experience</NavLink>
           </li>
-          <li>
-            <NavLink href="#tech">Technologies</NavLink>
+          <li key="Projects">
+            <NavLink href="#tech">Projects</NavLink>
           </li>
-          <li>
+          <li key="Technologies">
+            <NavLink href="#education">Technologies</NavLink>
+          </li>
+          <li key="Education">
             <NavLink href="#education">Education</NavLink>
           </li>
-          <li>
+          <li key="Certificates">
+            <NavLink href="#education">Certificates</NavLink>
+          </li>
+          <li key="Contact">
             <div>
               <NavLink onClick={modalOpenerHandler}>Contact</NavLink>
               <ContactModal
@@ -68,20 +81,6 @@ const Header = () => {
           </li>
         </Div2>
       )}
-      <Div3>
-        <SocialIcons
-          href="https://github.com/Yash01607"
-          target="_blank"
-        >
-          <AiFillGithub size={"3rem"} />
-        </SocialIcons>
-        <SocialIcons
-          href="https://www.linkedin.com/in/yash-agrawal-a150991a5/"
-          target="_blank"
-        >
-          <AiFillLinkedin size={"3rem"} />
-        </SocialIcons>
-      </Div3>
     </Container>
   );
 };

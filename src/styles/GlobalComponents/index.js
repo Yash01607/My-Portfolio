@@ -18,8 +18,7 @@ export const Section = styled.section`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
-
+    padding: ${(props) => (props.nopadding ? "0" : "16px 0px 16px 0px")};
     width: calc(100vw - 32px);
     flex-direction: column;
   }
@@ -298,11 +297,11 @@ export const LinkIconImg = styled.div`
   }
 `;
 
-export const TechTag = styled(motion.span)`
-  background-color: #003366;
+export const TechTag = styled(motion.div)`
+  background-color: ${({ red }) => (red ? "#bb0011" : "#003366")};
   border: none;
   border-radius: 5px;
   color: white;
   padding: 5px 10px;
-  margin: auto 5px;
+  margin: 5px;
 `;
