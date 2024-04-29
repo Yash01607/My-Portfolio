@@ -169,6 +169,14 @@ export const Skills = [
         image: "./images/technologies/artificial_intelligence/huggingface.png",
       },
       {
+        name: "Groq AI",
+        image: "./images/technologies/artificial_intelligence/groq.png",
+      },
+      {
+        name: "LLaMA",
+        image: "./images/technologies/artificial_intelligence/llama.png",
+      },
+      {
         name: "Langchain",
         image: "./images/technologies/artificial_intelligence/lanchain.png",
       },

@@ -50,7 +50,6 @@ const Projects = () => {
             <SummaryHead>
               <div>
                 <ProjectTitle>{showProjectDetails.title}</ProjectTitle>
-
                 <TagList summary>
                   <h3>Tech Stack:</h3>
                   {showProjectDetails.tags.map((t, i) => {

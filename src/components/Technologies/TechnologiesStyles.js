@@ -149,6 +149,9 @@ export const ListTitle = styled(motion.h4)`
     line-height: 28px;
     letter-spacing: 0.02em;
     margin: auto;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
     margin-bottom: 15px;
   }
 `;
