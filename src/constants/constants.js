@@ -50,7 +50,6 @@ export const Experience = [
       "ReactJS",
       "MySQL",
       "Google Cloud",
-      "",
     ],
   },
   {
