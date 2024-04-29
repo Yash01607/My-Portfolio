@@ -177,7 +177,7 @@ export const Skills = [
         image: "./images/technologies/artificial_intelligence/llama.png",
       },
       {
-        name: "Langchain",
+        name: "LangChain",
         image: "./images/technologies/artificial_intelligence/lanchain.png",
       },
       {
