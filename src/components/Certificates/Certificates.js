@@ -20,7 +20,6 @@ import {
 } from "../../styles/GlobalComponents";
 import { certificates } from "../../constants/constants";
 import Modal from "../Modal/Modal";
-import Button from "../../styles/GlobalComponents/Button";
 
 const Certificates = () => {
   const [showCertificate, setSetShowCertificate] = useState(null);
