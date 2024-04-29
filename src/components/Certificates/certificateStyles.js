@@ -6,7 +6,8 @@ export const Img = styled.img`
 `;
 
 export const CertificateImg = styled.img`
-  width: 100%;
+  width: 90%;
+  margin-top: 5%;
 `;
 
 export const GridContainer = styled.section`
@@ -74,7 +75,7 @@ export const ViewCertificateButton = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto 0px 20px auto;
+  margin: 2% auto 5% auto;
   color: #fff;
   background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
   cursor: pointer;
@@ -87,9 +88,9 @@ export const ViewCertificateButton = styled(motion.div)`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
+    width: 90%;
     height: 32px;
     font-size: 14px;
-    margin-bottom: 32px;
+    margin-bottom: 5%;
   }
 `;

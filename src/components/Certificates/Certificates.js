@@ -27,7 +27,10 @@ const Certificates = () => {
   const [link, setLink] = useState(null);
 
   return (
-    <Section nopadding id={"projects"}>
+    <Section
+      nopadding
+      id={"certificates"}
+    >
       <SectionDivider />
       <SectionTitle main>Certificates</SectionTitle>
       <Modal
@@ -36,6 +39,12 @@ const Certificates = () => {
         }}
         show={showCertificate}
       >
+        <CertificateImg
+          src={showCertificate}
+          alt={showCertificate}
+          title={`Visit ${showCertificate}`}
+        />
+
         <ViewCertificateButton
           initial={{ opacity: 0 }}
           whileInView={{
@@ -48,11 +57,6 @@ const Certificates = () => {
         >
           View Certificate
         </ViewCertificateButton>
-        <CertificateImg
-          src={showCertificate}
-          alt={showCertificate}
-          title={`Visit ${showCertificate}`}
-        />
       </Modal>
       <GridContainer>
         {certificates.map((c, i) => {
@@ -79,7 +83,10 @@ const Certificates = () => {
                 setLink(c.link);
               }}
             >
-              <Img src={c.logo} alt={c.title} />
+              <Img
+                src={c.logo}
+                alt={c.title}
+              />
               <CardInfo className="card-info">
                 {" "}
                 <TitleContent>

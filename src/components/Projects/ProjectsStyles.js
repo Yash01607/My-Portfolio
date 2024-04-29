@@ -151,6 +151,7 @@ export const SummaryModal = styled.div`
   padding: 3.6rem;
   border-radius: 1rem;
   animation: modal 0.2s linear;
+  text-align: left;
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;

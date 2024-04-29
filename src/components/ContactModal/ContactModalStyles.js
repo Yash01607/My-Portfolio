@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const DropDownContainerWrapper = styled.div`
+export const DropDownContainerWrapper = styled(motion.div)`
   top: 0;
   right: 0;
   bottom: 0;
@@ -16,14 +17,13 @@ export const DropDownContainerWrapper = styled.div`
   animation: modal 0.2s linear;
 `;
 
-export const DropDownContainer = styled.div`
+export const DropDownContainer = styled(motion.div)`
   opacity: 1;
   background-color: #fff;
   background-color: #fff;
   border-radius: 8px;
   padding: 4px 0;
   cursor: default;
-  max-width: 500px;
 
   @media ${(props) => props.theme.breakpoints.md} {
     top: 32px;

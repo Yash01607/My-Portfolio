@@ -28,6 +28,7 @@ export const ModalContainer = styled(motion.div)`
   color: #f2f5f7;
   box-shadow: 3px 3px 20px #797d7c;
   overflow-y: auto;
+  text-align: center;
   scrollbar-width: none;
 
   @media ${(props) => props.theme.breakpoints.md} {

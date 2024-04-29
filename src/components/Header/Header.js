@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
+import { FaGoogleDrive } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { FaHackerrank } from "react-icons/fa6";
+import { SiCodeforces } from "react-icons/si";
+import { SiCodechef } from "react-icons/si";
 
 import ContactModal from "../ContactModal/ContactModal";
 
@@ -39,33 +44,80 @@ const Header = () => {
           <SocialIcons
             href="https://github.com/Yash01607"
             target="_blank"
+            title="My GitHub"
           >
             <AiFillGithub size={"3rem"} />
           </SocialIcons>
           <SocialIcons
             href="https://www.linkedin.com/in/yash-agrawal-a150991a5/"
             target="_blank"
+            title="My LinkedIn"
           >
             <AiFillLinkedin size={"3rem"} />
           </SocialIcons>
+          {width > 395 && (
+            <SocialIcons
+              href="https://drive.google.com/file/d/1vq-jhH1JpF4QflUQKkASX6P-5jSThghO/view?usp=sharing"
+              target="_blank"
+              title="My Resume"
+            >
+              <FaGoogleDrive size={"3rem"} />
+            </SocialIcons>
+          )}
+          {width > 442 && (
+            <SocialIcons
+              href="https://leetcode.com/u/Yash_01/"
+              target="_blank"
+              title="Leetcode"
+            >
+              <SiLeetcode size={"3rem"} />
+            </SocialIcons>
+          )}
+          {width > 487 && (
+            <SocialIcons
+              href="https://www.hackerrank.com/profile/Yash_01"
+              target="_blank"
+              title="Hackerrank"
+            >
+              <FaHackerrank size={"3rem"} />
+            </SocialIcons>
+          )}
+          {width > 535 && (
+            <SocialIcons
+              href="https://codeforces.com/profile/Yash_01"
+              target="_blank"
+              title="Codeforces"
+            >
+              <SiCodeforces size={"3rem"} />
+            </SocialIcons>
+          )}
+          {width > 579 && (
+            <SocialIcons
+              href="https://www.codechef.com/users/yash3457"
+              target="_blank"
+              title="CodeChef"
+            >
+              <SiCodechef size={"3rem"} />
+            </SocialIcons>
+          )}
         </Div3>
       </Div1Div3Wrapper>
       {width > 800 && (
         <Div2>
           <li key="Experience">
-            <NavLink href="#projects">Experience</NavLink>
+            <NavLink href="#experience">Experience</NavLink>
           </li>
           <li key="Projects">
-            <NavLink href="#tech">Projects</NavLink>
+            <NavLink href="#projects">Projects</NavLink>
           </li>
           <li key="Technologies">
-            <NavLink href="#education">Technologies</NavLink>
+            <NavLink href="#tech">Technologies</NavLink>
           </li>
           <li key="Education">
             <NavLink href="#education">Education</NavLink>
           </li>
           <li key="Certificates">
-            <NavLink href="#education">Certificates</NavLink>
+            <NavLink href="#certificates">Certificates</NavLink>
           </li>
           <li key="Contact">
             <div>

@@ -1,8 +1,8 @@
-import React from 'react';
-import { AiFillPhone, AiOutlineMail } from 'react-icons/ai';
-import { FaLocationArrow } from 'react-icons/fa';
+import React from "react";
+import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
+import { FaLocationArrow } from "react-icons/fa";
 
-import { contactDetails } from '../../constants/constants';
+import { contactDetails } from "../../constants/constants";
 
 import {
   DropDownContainerWrapper,
@@ -12,7 +12,7 @@ import {
   DropDownItemDesc,
   DropDownItemTitle,
   DropDownTextContainer,
-} from './ContactModalStyles';
+} from "./ContactModalStyles";
 
 const ContactModal = (props) => {
   if (!props.show) {
@@ -21,7 +21,20 @@ const ContactModal = (props) => {
 
   return (
     <DropDownContainerWrapper onClick={() => props.onClose()}>
-      <DropDownContainer onClick={(e) => e.stopPropagation()}>
+      <DropDownContainer
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.3,
+            delay: 0,
+            ease: "easeInOut",
+          },
+        }}
+        exit={{ opacity: 0, y: 30 }}
+        onClick={(e) => e.stopPropagation()}
+      >
         <DropDownItem
           onClick={() => navigator.clipboard.writeText(contactDetails.phone)}
           title="Click to copy Contact no. to clipboard"
@@ -33,7 +46,7 @@ const ContactModal = (props) => {
             <DropDownItemTitle
               href={`tel:${contactDetails.phone.substring(1)}`}
             >
-              Phone: {contactDetails.phone}{' '}
+              Phone: {contactDetails.phone}{" "}
             </DropDownItemTitle>
             <DropDownItemDesc>
               Let's get together and have a chat?
