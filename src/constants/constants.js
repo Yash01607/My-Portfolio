@@ -42,12 +42,15 @@ export const Experience = [
     ],
     techStack: [
       "Python",
-      " FastAPI",
-      " Django",
-      " OpenAI",
-      " LangChain",
-      " ReactJS",
-      " MySQL",
+      "FastAPI",
+      "Django",
+      "OpenAI",
+      "LangChain",
+      "Pinecone",
+      "ReactJS",
+      "MySQL",
+      "Google Cloud",
+      "",
     ],
   },
   {
@@ -147,6 +150,35 @@ export const Skills = [
     ],
   },
   {
+    category: "AI Models & Technologies",
+    skills: [
+      {
+        name: "OpenAI",
+        image: "./images/technologies/artificial_intelligence/openai.png",
+      },
+      {
+        name: "Claude AI",
+        image: "./images/technologies/artificial_intelligence/claude.png",
+      },
+      {
+        name: "Gemini AI",
+        image: "./images/technologies/artificial_intelligence/gemini.png",
+      },
+      {
+        name: "HuggingFace AI",
+        image: "./images/technologies/artificial_intelligence/huggingface.png",
+      },
+      {
+        name: "Langchain",
+        image: "./images/technologies/artificial_intelligence/lanchain.png",
+      },
+      {
+        name: "LangSmith",
+        image: "./images/technologies/artificial_intelligence/langsmith.png",
+      },
+    ],
+  },
+  {
     category: "Frontend",
     skills: [
       { name: "ReactJS", image: "./images/technologies/frontend/react.png" },
@@ -193,10 +225,14 @@ export const Skills = [
         name: "PostgreSQL",
         image: "./images/technologies/databases/postgresql.png",
       },
+      {
+        name: "Pinecone",
+        image: "./images/technologies/databases/pinecone.png",
+      },
     ],
   },
   {
-    category: "Web3/AI",
+    category: "Web3",
     skills: [
       {
         name: "Solidity",
@@ -207,16 +243,8 @@ export const Skills = [
         image: "./images/technologies/web3/metamask.png",
       },
       {
-        name: "Langchain",
-        image: "./images/technologies/artificial_intelligence/lanchain.png",
-      },
-      {
-        name: "LangSmith",
-        image: "./images/technologies/artificial_intelligence/langsmith.png",
-      },
-      {
-        name: "OpenAI",
-        image: "./images/technologies/artificial_intelligence/openai.png",
+        name: "Ethereum",
+        image: "./images/technologies/web3/ethereum.png",
       },
     ],
   },

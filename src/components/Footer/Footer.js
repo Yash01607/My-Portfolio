@@ -55,7 +55,6 @@ const Footer = () => {
           >
             <AiFillLinkedin size={"3rem"} />
           </SocialIcons>
-          {/* {width > 395 && ( */}
           <SocialIcons
             href="https://drive.google.com/file/d/1vq-jhH1JpF4QflUQKkASX6P-5jSThghO/view?usp=sharing"
             target="_blank"
@@ -63,8 +62,6 @@ const Footer = () => {
           >
             <FaGoogleDrive size={"3rem"} />
           </SocialIcons>
-          {/* )} */}
-          {/* {width > 442 && ( */}
           <SocialIcons
             href="https://leetcode.com/u/Yash_01/"
             target="_blank"
@@ -72,8 +69,6 @@ const Footer = () => {
           >
             <SiLeetcode size={"3rem"} />
           </SocialIcons>
-          {/* )} */}
-          {/* {width > 487 && ( */}
           <SocialIcons
             href="https://www.hackerrank.com/profile/Yash_01"
             target="_blank"
@@ -81,8 +76,6 @@ const Footer = () => {
           >
             <FaHackerrank size={"3rem"} />
           </SocialIcons>
-          {/* )} */}
-          {/* {width > 535 && ( */}
           <SocialIcons
             href="https://codeforces.com/profile/Yash_01"
             target="_blank"
@@ -90,8 +83,6 @@ const Footer = () => {
           >
             <SiCodeforces size={"3rem"} />
           </SocialIcons>
-          {/* )} */}
-          {/* {width > 579 && ( */}
           <SocialIcons
             href="https://www.codechef.com/users/yash3457"
             target="_blank"
@@ -99,7 +90,6 @@ const Footer = () => {
           >
             <SiCodechef size={"3rem"} />
           </SocialIcons>
-          {/* )} */}
         </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
