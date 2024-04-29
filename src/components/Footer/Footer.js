@@ -1,9 +1,9 @@
-import React from 'react';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import React from "react";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
-import { SocialIcons } from '../Header/HeaderStyles';
+import { SocialIcons } from "../Header/HeaderStyles";
 
-import { contactDetails } from '../../constants/constants';
+import { contactDetails } from "../../constants/constants";
 
 import {
   CompanyContainer,
@@ -15,7 +15,9 @@ import {
   Slogan,
   SocialContainer,
   SocialIconsContainer,
-} from './FooterStyles';
+} from "./FooterStyles";
+import { SiCodechef, SiCodeforces, SiLeetcode } from "react-icons/si";
+import { FaGoogleDrive, FaHackerrank } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -39,15 +41,65 @@ const Footer = () => {
           <Slogan>Turning Digital Dreams into Reality</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/Yash01607" target="_blank">
-            <AiFillGithub size={'3rem'} />
+          <SocialIcons
+            href="https://github.com/Yash01607"
+            target="_blank"
+            title="My GitHub"
+          >
+            <AiFillGithub size={"3rem"} />
           </SocialIcons>
           <SocialIcons
             href="https://www.linkedin.com/in/yash-agrawal-a150991a5/"
             target="_blank"
+            title="My LinkedIn"
           >
-            <AiFillLinkedin size={'3rem'} />
+            <AiFillLinkedin size={"3rem"} />
           </SocialIcons>
+          {/* {width > 395 && ( */}
+          <SocialIcons
+            href="https://drive.google.com/file/d/1vq-jhH1JpF4QflUQKkASX6P-5jSThghO/view?usp=sharing"
+            target="_blank"
+            title="My Resume"
+          >
+            <FaGoogleDrive size={"3rem"} />
+          </SocialIcons>
+          {/* )} */}
+          {/* {width > 442 && ( */}
+          <SocialIcons
+            href="https://leetcode.com/u/Yash_01/"
+            target="_blank"
+            title="Leetcode"
+          >
+            <SiLeetcode size={"3rem"} />
+          </SocialIcons>
+          {/* )} */}
+          {/* {width > 487 && ( */}
+          <SocialIcons
+            href="https://www.hackerrank.com/profile/Yash_01"
+            target="_blank"
+            title="Hackerrank"
+          >
+            <FaHackerrank size={"3rem"} />
+          </SocialIcons>
+          {/* )} */}
+          {/* {width > 535 && ( */}
+          <SocialIcons
+            href="https://codeforces.com/profile/Yash_01"
+            target="_blank"
+            title="Codeforces"
+          >
+            <SiCodeforces size={"3rem"} />
+          </SocialIcons>
+          {/* )} */}
+          {/* {width > 579 && ( */}
+          <SocialIcons
+            href="https://www.codechef.com/users/yash3457"
+            target="_blank"
+            title="CodeChef"
+          >
+            <SiCodechef size={"3rem"} />
+          </SocialIcons>
+          {/* )} */}
         </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
