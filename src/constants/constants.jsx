@@ -155,7 +155,7 @@ export const Skills = [
     ],
   },
   {
-    category: "AI Models & Technologies",
+    category: "AI Tech",
     skills: [
       {
         name: "OpenAI",
