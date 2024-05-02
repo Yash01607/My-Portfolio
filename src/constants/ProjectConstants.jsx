@@ -3,7 +3,7 @@ export const projects = [
     title: "AgroTech",
     description:
       "Developed a MERN Stack E-commerce Web Application for agricultural products.",
-    image: "./images/agrotech.png",
+    image: "./images/projects/agrotech.png",
     tags: ["ReactJS", "ReduxJS", "NodeJS", "ExpressJS", "MongoDB", "Socket.IO"],
     tagImgs: [
       "./images/technologies/frontend/react.png",
@@ -55,8 +55,8 @@ export const projects = [
   {
     title: "CrowdWallet",
     description:
-      "Crowd Wallet facilitates project crowdfunding, utilizing Blockchain Technology for Entrepenaurs.",
-    image: "./images/crowdwallet.png",
+      "Crowd Wallet facilitates project crowdfunding, utilizing Blockchain Technology for Entrepreneurs.",
+    image: "./images/projects/crowdwallet.png",
     tags: ["NextJS", "Solidity", "Metamask"],
     tagImgs: [
       "./images/technologies/frontend/next-js.png",
@@ -101,7 +101,7 @@ export const projects = [
     title: "Memoreaum",
     description:
       "Created a user-friendly social media app with the MERN stack, enabling seamless sharing of moments and events.",
-    image: "./images/memoreaum.png",
+    image: "./images/projects/memoreaum.png",
     tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
     tagImgs: [
       "./images/technologies/databases/mongodb.png",
@@ -158,7 +158,7 @@ export const projects = [
     id: 4,
     details: [
       {
-        heading: "User Authentication and Authorisation",
+        heading: "User Authentication and Authorization",
         description: [
           "Secure user registration and login functionalities.",
           "Role-based access control to manage user permissions.",
@@ -218,7 +218,7 @@ export const projects = [
     title: "Expense Tracker",
     description:
       "Developed a user friendly Expense Tracker Web-App where users can digitally keep track of their monthly expenses.",
-    image: "./images/expense-tracker.png",
+    image: "./images/projects/expense-tracker.png",
     tags: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
     tagImgs: [
       "./images/technologies/frontend/react.png",

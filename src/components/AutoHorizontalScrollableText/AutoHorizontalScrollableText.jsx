@@ -24,7 +24,7 @@ const Header = ({ children }) => {
 
   return (
     <Div
-      scrollable={true}
+      scrollable
       ref={headerRef}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

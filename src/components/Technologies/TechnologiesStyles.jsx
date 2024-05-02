@@ -118,7 +118,7 @@ export const ListItem = styled(motion.li)`
   margin: 0 auto 30px auto;
   padding: 30px 0 30px 0;
 
-  @hover {
+  &:hover {
     cursor: pointer;
   }
 

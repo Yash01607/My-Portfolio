@@ -26,10 +26,7 @@ const Certificates = () => {
   const [link, setLink] = useState(null);
 
   return (
-    <Section
-      nopadding
-      id={"certificates"}
-    >
+    <Section nopadding id={"certificates"}>
       <SectionDivider />
       <SectionTitle main>Certificates</SectionTitle>
       <Modal
@@ -45,10 +42,9 @@ const Certificates = () => {
         />
 
         <ViewCertificateButton
-          initial={{ opacity: 0 }}
-          whileInView={{
-            opacity: 1,
-            transition: { duration: 1, delay: 0.2, ease: "easeInOut" },
+          whileHover={{
+            scale: 1.2,
+            transition: { duration: 0.2, ease: "easeInOut" },
           }}
           onClick={() => window.open(link, "_blank", "noopener,noreferrer")}
           target="_blank"
@@ -82,10 +78,7 @@ const Certificates = () => {
                 setLink(c.link);
               }}
             >
-              <Img
-                src={c.logo}
-                alt={c.title}
-              />
+              <Img src={c.logo} alt={c.title} />
               <CardInfo className="card-info">
                 {" "}
                 <TitleContent>

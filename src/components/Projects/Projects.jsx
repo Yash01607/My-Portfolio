@@ -54,7 +54,7 @@ const Projects = () => {
                   <h3>Tech Stack:</h3>
                   {showProjectDetails.tags.map((t, i) => {
                     return (
-                      <TagSpan>
+                      <TagSpan key={i}>
                         {t}
                         {showProjectDetails.tags.length - 1 === i ? "." : ","}
                       </TagSpan>
@@ -69,7 +69,7 @@ const Projects = () => {
             </SummaryHead>
 
             {showProjectDetails?.details?.map((detail, i) => (
-              <SummaryList border_top>
+              <SummaryList key={i} border_top>
                 <h3>{detail.heading}</h3>
                 <ListContent>
                   {detail.description.map((t, i) => (
@@ -86,6 +86,7 @@ const Projects = () => {
       <GridContainer>
         {projects.map((p, i) => (
           <motion.div
+            key={i}
             className="card"
             initial={{ scale: 0.7, opacity: 0 }}
             whileInView={{
@@ -96,12 +97,8 @@ const Projects = () => {
           >
             <div className="wrapper">
               <TitleContent>
-                <a
-                  href={p.visit}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <HeaderThree title={"true"}>{p.title}</HeaderThree>
+                <a href={p.visit} target="_blank" rel="noreferrer">
+                  <HeaderThree title>{p.title}</HeaderThree>
                 </a>
                 <Hr />
               </TitleContent>
@@ -111,13 +108,7 @@ const Projects = () => {
               <Hr />
               <TagList>
                 {p.tagImgs.map((t, i) => {
-                  return (
-                    <TagImg
-                      src={t}
-                      alt={t}
-                      key={i}
-                    ></TagImg>
-                  );
+                  return <TagImg src={t} alt={t} key={i}></TagImg>;
                 })}
               </TagList>
             </div>

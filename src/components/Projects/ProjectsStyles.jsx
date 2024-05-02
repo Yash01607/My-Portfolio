@@ -15,7 +15,7 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
   display: flex;
-  flex-diection: row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 3rem;
@@ -46,7 +46,7 @@ export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
   color: #9cc9e3;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
 `;
 

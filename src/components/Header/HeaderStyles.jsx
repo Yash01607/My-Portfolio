@@ -1,5 +1,6 @@
 import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
   display: flex;
@@ -105,16 +106,14 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   }
 `;
 
-export const SocialIcons = styled.a`
-  transition: 0.3s ease;
+export const SocialIcons = styled(motion.a)`
   color: white;
   border-radius: 50px;
   padding: 8px;
-  &:hover {
+  /* &:hover {
     background-color: #212d45;
-    transform: scale(1.2);
     cursor: pointer;
-  }
+  } */
 `;
 
 export const MenuIcon = styled.div`

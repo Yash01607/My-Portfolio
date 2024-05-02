@@ -25,8 +25,9 @@ const Technologies = () => (
       development.
     </SectionText>
     <List>
-      {Skills.map((skillGroup) => (
+      {Skills.map((skillGroup, i) => (
         <ListItem
+          key={i}
           whileHover={{
             scale: 1.05,
             transition: { duration: 0.4, ease: "easeInOut" },

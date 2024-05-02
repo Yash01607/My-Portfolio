@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { ModalWrapper, ModalContainer } from "./ModalStyles.js";
+import { ModalWrapper, ModalContainer } from "./ModalStyles.jsx";
 
 const Modal = (props) => {
   useEffect(() => {

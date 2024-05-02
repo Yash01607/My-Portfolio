@@ -43,6 +43,7 @@ const ExperienceSection = () => {
       <List>
         {Experience.map((exp, i) => (
           <ListItem
+            key={i}
             initial={{ x: -50, opacity: 0 }}
             whileInView={{
               x: 0,
@@ -50,11 +51,7 @@ const ExperienceSection = () => {
               opacity: 1,
             }}
           >
-            <ListItemImage
-              src={exp.image}
-              alt={exp.name}
-              title={exp.name}
-            />
+            <ListItemImage src={exp.image} alt={exp.name} title={exp.name} />
             <ListItemDetails>
               <ListItemCompany>
                 {exp.company}
@@ -73,14 +70,8 @@ const ExperienceSection = () => {
                   <ListContentDesc key={i}>{desc}</ListContentDesc>
                 ))}
 
-                <ListContentDescTech
-                  border_top
-                  key={"TechSTack"}
-                >
-                  <TechTag
-                    key={"yash"}
-                    red
-                  >
+                <ListContentDescTech border_top key={"TechSTack"}>
+                  <TechTag key={"yash"} red>
                     Tech Stack{" "}
                   </TechTag>
                   :

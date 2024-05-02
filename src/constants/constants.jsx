@@ -35,7 +35,7 @@ export const Experience = [
     image: "./images/experience/beehyv.png",
     desc: [
       "Engaged in ongoing projects with LLM-Models alongside utilizing leading AI tools such as OpenAI and Langchain.",
-      "Colaborated on building an AI app using RAG Framework and Langchain.",
+      "Collaborated on building an AI app using RAG Framework and Langchain.",
       "Utilized various AI models including OpenAI, Claude, and Anthropic, as well as open-source models like LLAMA 2.",
       "Boosted process efficiency by 67% through the implementation of parallel processing techniques.",
       "Designed and constructed a fully functional Ecommerce Website from scratch using Django and React.",
@@ -50,7 +50,6 @@ export const Experience = [
       "ReactJS",
       "MySQL",
       "Google Cloud",
-      "",
     ],
   },
   {
@@ -87,10 +86,10 @@ export const contactDetails = {
 export const certificates = [
   {
     title: "JavaScript(Intermediate)",
-    image: "./images/certificates/javascript_Intermidiate.jpg",
+    image: "./images/certificates/javascript_intermediate.jpg",
     issuedBy: "Hackerrank",
     issuedOn: "Jan 2024",
-    logo: "./images/hackerrank.png",
+    logo: "./images/certificates/companies/hackerrank.png",
     link: "https://www.hackerrank.com/certificates/62b40426f498",
   },
   {
@@ -98,7 +97,7 @@ export const certificates = [
     image: "./images/certificates/sql_advanced.jpg",
     issuedBy: "Hackerrank",
     issuedOn: "Jan 2024",
-    logo: "./images/hackerrank.png",
+    logo: "./images/certificates/companies/hackerrank.png",
     link: "https://www.hackerrank.com/certificates/afe3212a1baa",
   },
   {
@@ -106,7 +105,7 @@ export const certificates = [
     image: "./images/certificates/ethereum_and_solidity.jpg",
     issuedBy: "Udemy",
     issuedOn: "April 2023",
-    logo: "./images/udemy.png",
+    logo: "./images/certificates/companies/udemy.png",
     link: "https://www.udemy.com/certificate/UC-17101ac8-122b-4052-b7db-654b13647dcd/",
   },
   {
@@ -114,7 +113,7 @@ export const certificates = [
     image: "./images/certificates/react_complete_guide.jpg",
     issuedBy: "Udemy",
     issuedOn: "July 2022",
-    logo: "./images/udemy.png",
+    logo: "./images/certificates/companies/udemy.png",
     link: "https://www.udemy.com/certificate/UC-e45c9f0c-c0a1-454d-92b7-81788b4113b7/",
   },
   {
@@ -122,7 +121,7 @@ export const certificates = [
     image: "./images/certificates/the_complete_web_development_bootcamp.jpg",
     issuedBy: "Udemy",
     issuedOn: "July 2021",
-    logo: "./images/udemy.png",
+    logo: "./images/certificates/companies/udemy.png",
     link: "https://www.udemy.com/certificate/UC-11a1164a-d4bc-4daf-ba4b-d0fd60fb0f0a/",
   },
   {
@@ -130,7 +129,7 @@ export const certificates = [
     issuedBy: "Hackerrank",
     image: "./images/certificates/problem_solving_intermediate.jpg",
     issuedOn: "Sep 2020",
-    logo: "./images/hackerrank.png",
+    logo: "./images/certificates/companies/hackerrank.png",
     link: "https://www.hackerrank.com/certificates/94c876ad5f78",
   },
 ];
@@ -140,9 +139,15 @@ export const Skills = [
     category: "Backend",
     skills: [
       { name: "NodeJS", image: "./images/technologies/backend/nodejs.png" },
-      { name: "ExpressJS", image: "./images/technologies/backend/express.png" },
+      {
+        name: "ExpressJS",
+        image: "./images/technologies/backend/express.png",
+      },
       { name: "Django", image: "./images/technologies/backend/django.png" },
-      { name: "FastAPI", image: "./images/technologies/backend/fastapi.png" },
+      {
+        name: "FastAPI",
+        image: "./images/technologies/backend/fastapi.png",
+      },
       {
         name: "Socket.IO",
         image: "./images/technologies/backend/socketio.png",
@@ -178,7 +183,7 @@ export const Skills = [
       },
       {
         name: "LangChain",
-        image: "./images/technologies/artificial_intelligence/lanchain.png",
+        image: "./images/technologies/artificial_intelligence/langchain.png",
       },
       {
         name: "LangSmith",
@@ -189,8 +194,14 @@ export const Skills = [
   {
     category: "Frontend",
     skills: [
-      { name: "ReactJS", image: "./images/technologies/frontend/react.png" },
-      { name: "NextJS", image: "./images/technologies/frontend/next-js.png" },
+      {
+        name: "ReactJS",
+        image: "./images/technologies/frontend/react.png",
+      },
+      {
+        name: "NextJS",
+        image: "./images/technologies/frontend/next-js.png",
+      },
       { name: "Redux", image: "./images/technologies/frontend/redux.png" },
       {
         name: "BootStrap",
@@ -198,7 +209,10 @@ export const Skills = [
       },
       { name: "HTML", image: "./images/technologies/frontend/html.png" },
       { name: "CSS", image: "./images/technologies/frontend/css.png" },
-      { name: "GraphQL", image: "./images/technologies/frontend/graphql.png" },
+      {
+        name: "GraphQL",
+        image: "./images/technologies/frontend/graphql.png",
+      },
     ],
   },
   {
@@ -212,7 +226,10 @@ export const Skills = [
         name: "JavaScript",
         image: "./images/technologies/languages/javascript.png",
       },
-      { name: "Python", image: "./images/technologies/languages/python.png" },
+      {
+        name: "Python",
+        image: "./images/technologies/languages/python.png",
+      },
       { name: "Java", image: "./images/technologies/languages/java.png" },
       {
         name: "C",
@@ -223,7 +240,10 @@ export const Skills = [
   {
     category: "DataBases",
     skills: [
-      { name: "MongoDB", image: "./images/technologies/databases/mongodb.png" },
+      {
+        name: "MongoDB",
+        image: "./images/technologies/databases/mongodb.png",
+      },
       { name: "MySQL", image: "./images/technologies/databases/mysql.png" },
       {
         name: "Firebase",
@@ -259,12 +279,30 @@ export const Skills = [
   {
     category: "DevTools",
     skills: [
-      { name: "Github", image: "./images/technologies/software/github.png" },
-      { name: "VsCode", image: "./images/technologies/software/vscode.png" },
-      { name: "PyCharm", image: "./images/technologies/software/pycharm.png" },
-      { name: "Ubuntu", image: "./images/technologies/software/ubuntu.png" },
-      { name: "Postman", image: "./images/technologies/software/postman.png" },
-      { name: "DBeaver", image: "./images/technologies/software/dbeaver.png" },
+      {
+        name: "Github",
+        image: "./images/technologies/software/github.png",
+      },
+      {
+        name: "VsCode",
+        image: "./images/technologies/software/vscode.png",
+      },
+      {
+        name: "PyCharm",
+        image: "./images/technologies/software/pycharm.png",
+      },
+      {
+        name: "Ubuntu",
+        image: "./images/technologies/software/ubuntu.png",
+      },
+      {
+        name: "Postman",
+        image: "./images/technologies/software/postman.png",
+      },
+      {
+        name: "DBeaver",
+        image: "./images/technologies/software/dbeaver.png",
+      },
     ],
   },
 ];
