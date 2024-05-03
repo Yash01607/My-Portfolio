@@ -26,7 +26,7 @@ const Certificates = () => {
   const [link, setLink] = useState(null);
 
   return (
-    <Section nopadding id={"certificates"}>
+    <Section id={"certificates"}>
       <SectionDivider />
       <SectionTitle main>Certificates</SectionTitle>
       <Modal
