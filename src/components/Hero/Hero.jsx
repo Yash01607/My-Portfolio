@@ -140,14 +140,14 @@ const Hero = () => {
               <SocialIcons
                 key={i}
                 initial={{ opacity: 0, scale: 0.7 }}
-                whileInView={{
+                animate={{
                   opacity: 1,
                   scale: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: i * 0.05 + 4,
-                    ease: "easeInOut",
-                  },
+                }}
+                transition={{
+                  duration: 0.5,
+                  delay: i * 0.05 + 4,
+                  ease: "easeInOut",
                 }}
                 href={icon.link}
                 target="_blank"
