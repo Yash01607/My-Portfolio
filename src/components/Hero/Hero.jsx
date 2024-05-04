@@ -12,11 +12,16 @@ import {
   SummaryModal,
   ListContent,
   ListContentDesc,
+  SocialIcons,
+  SocialIconImg,
+  SocialIconsContainer,
+  ButtonsDiv,
 } from "./HeroStyles";
 import {
   Titles,
   aboutMeText,
   heroSectionText,
+  socialIcons,
 } from "../../constants/constants";
 import Modal from "../Modal/Modal";
 // import OptimusPrime from '../OptimusPrime/OptimusPrime';
@@ -41,6 +46,31 @@ const Hero = () => {
                 <ListContentDesc key={i}>{text}</ListContentDesc>
               ))}
             </ListContent>
+            <SocialIconsContainer center>
+              {socialIcons.map((icon, i) => (
+                <SocialIcons
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.7 }}
+                  whileInView={{
+                    opacity: 1,
+                    scale: 1,
+                    transition: {
+                      duration: 0.5,
+                      delay: i * 0.05,
+                      ease: "easeInOut",
+                    },
+                  }}
+                  href={icon.link}
+                  target="_blank"
+                  title={icon.name}
+                >
+                  <SocialIconImg
+                    src={icon.image}
+                    alt={icon.name}
+                  ></SocialIconImg>
+                </SocialIcons>
+              ))}
+            </SocialIconsContainer>
           </SummaryModal>
         </Modal>
 
@@ -104,15 +134,57 @@ const Hero = () => {
           >
             {heroSectionText}
           </IntroText>
-          <KnowMoreButton
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 4, ease: "easeInOut" }}
-            onClick={() => setShowSummary(true)}
-            target="_blank"
-          >
-            Know More
-          </KnowMoreButton>
+          <SocialIconsContainer>
+            {" "}
+            {socialIcons.map((icon, i) => (
+              <SocialIcons
+                key={i}
+                initial={{ opacity: 0, scale: 0.7 }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: i * 0.05 + 4,
+                    ease: "easeInOut",
+                  },
+                }}
+                href={icon.link}
+                target="_blank"
+                title={icon.name}
+              >
+                <SocialIconImg
+                  src={icon.image}
+                  alt={icon.name}
+                ></SocialIconImg>
+              </SocialIcons>
+            ))}
+          </SocialIconsContainer>
+          <ButtonsDiv>
+            <KnowMoreButton
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 4, ease: "easeInOut" }}
+              onClick={() => setShowSummary(true)}
+              target="_blank"
+            >
+              Know More
+            </KnowMoreButton>
+            <KnowMoreButton
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 4, ease: "easeInOut" }}
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1vq-jhH1JpF4QflUQKkASX6P-5jSThghO/view?usp=sharing",
+                  "_blank"
+                )
+              }
+              title="View Resume"
+            >
+              View Resume
+            </KnowMoreButton>
+          </ButtonsDiv>
         </LeftSection>
         {/* <RightSection>
      <OptimusPrime></OptimusPrime>

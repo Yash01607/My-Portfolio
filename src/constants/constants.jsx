@@ -1,6 +1,63 @@
+import beehyvImage from "../images/experience/beehyv.png";
+import iauroImage from "../images/experience/iauro.png";
+import javascriptCertificateImage from "../images/certificates/javascript_intermediate.jpg";
+import sqlCertificateImage from "../images/certificates/sql_advanced.jpg";
+import ethereumAndSolidityCertificateImage from "../images/certificates/ethereum_and_solidity.jpg";
+import reactCompleteGuideImage from "../images/certificates/react_complete_guide.jpg";
+import theCompleteWebDevelopmentBootcampImage from "../images/certificates/the_complete_web_development_bootcamp.jpg";
+import problemSolvingIntermediateImage from "../images/certificates/problem_solving_intermediate.jpg";
+import nodejsImage from "../images/technologies/backend/nodejs.png";
+import expressImage from "../images/technologies/backend/express.png";
+import djangoImage from "../images/technologies/backend/django.png";
+import fastapiImage from "../images/technologies/backend/fastapi.png";
+import socketioImage from "../images/technologies/backend/socketio.png";
+import openaiImage from "../images/technologies/artificial_intelligence/openai.png";
+import claudeImage from "../images/technologies/artificial_intelligence/claude.png";
+import geminiImage from "../images/technologies/artificial_intelligence/gemini.png";
+import huggingfaceImage from "../images/technologies/artificial_intelligence/huggingface.png";
+import groqImage from "../images/technologies/artificial_intelligence/groq.png";
+import llamaImage from "../images/technologies/artificial_intelligence/llama.png";
+import langchainImage from "../images/technologies/artificial_intelligence/langchain.png";
+import langsmithImage from "../images/technologies/artificial_intelligence/langsmith.png";
+import reactImage from "../images/technologies/frontend/react.png";
+import nextjsImage from "../images/technologies/frontend/next-js.png";
+import reduxImage from "../images/technologies/frontend/redux.png";
+import bootstrapImage from "../images/technologies/frontend/bootstrap.png";
+import htmlImage from "../images/technologies/frontend/html.png";
+import cssImage from "../images/technologies/frontend/css.png";
+import graphqlImage from "../images/technologies/frontend/graphql.png";
+import cplusPlusImage from "../images/technologies/languages/c_plus_plus.png";
+import javascriptImage from "../images/technologies/languages/javascript.png";
+import pythonImage from "../images/technologies/languages/python.png";
+import javaImage from "../images/technologies/languages/java.png";
+import cImage from "../images/technologies/languages/c.png";
+import mongodbImage from "../images/technologies/databases/mongodb.png";
+import mysqlImage from "../images/technologies/databases/mysql.png";
+import firebaseImage from "../images/technologies/databases/firebase.png";
+import postgresqlImage from "../images/technologies/databases/postgresql.png";
+import pineconeImage from "../images/technologies/databases/pinecone.png";
+import solidityImage from "../images/technologies/web3/solidity.png";
+import metamaskImage from "../images/technologies/web3/metamask.png";
+import ethereumImage from "../images/technologies/web3/ethereum.png";
+import githubImage from "../images/technologies/software/github.png";
+import vscodeImage from "../images/technologies/software/vscode.png";
+import pycharmImage from "../images/technologies/software/pycharm.png";
+import ubuntuImage from "../images/technologies/software/ubuntu.png";
+import postmanImage from "../images/technologies/software/postman.png";
+import dbeaverImage from "../images/technologies/software/dbeaver.png";
+import hackerrankImage from "../images/certificates/companies/hackerrank.png";
+import udemyImage from "../images/certificates/companies/udemy.png";
+import githubIconImage from "../images/socialicons/github.png";
+import linkedinIconImage from "../images/socialicons/linkedin.png";
+import googleDriveIconImage from "../images/socialicons/drive.png";
+import leetcodeIconImage from "../images/socialicons/leetcode.png";
+import hackerrankIconImage from "../images/socialicons/hackerrank.png";
+import codeforcesIconImage from "../images/socialicons/codeforces.png";
+import codechefIconImage from "../images/socialicons/codechef.png";
+
 export const Titles = [
   "B.Tech - IIT Dhanbad'23 ",
-  " Software Developer - Beehyv",
+  "Software Developer - Beehyv",
 ];
 
 export const EducationDetails = [
@@ -32,7 +89,7 @@ export const Experience = [
     designation: "Software Developer",
     company: "Beehyv Software Solutions Pvt. Ltd.",
     location: "Hyderabad, Telangana",
-    image: "./images/experience/beehyv.png",
+    image: beehyvImage,
     desc: [
       "Engaged in ongoing projects with LLM-Models alongside utilizing leading AI tools such as OpenAI and Langchain.",
       "Collaborated on building an AI app using RAG Framework and Langchain.",
@@ -57,7 +114,7 @@ export const Experience = [
     designation: "Software Developer - Intern",
     company: "Iauro Systems Pvt. Ltd.",
     location: "Pune, Maharashtra",
-    image: "./images/experience/iauro.png",
+    image: iauroImage,
     desc: [
       "Worked on building a Web-App for selling Handmade Products.",
       "Implemented backend using Vendure (A Headless Application) and frontend using React JS.",
@@ -65,6 +122,44 @@ export const Experience = [
       "Worked on building custom Plugins to modify behavior of Vendure.",
     ],
     techStack: ["ReactJS", "Vendure", " MySQL", " GraphQL", " Stripe"],
+  },
+];
+
+export const socialIcons = [
+  {
+    name: "My GitHub",
+    link: "https://github.com/Yash01607",
+    image: githubIconImage,
+  },
+  {
+    name: "My LinkedIn",
+    link: "https://www.linkedin.com/in/yash-agrawal-a150991a5/",
+    image: linkedinIconImage,
+  },
+  {
+    name: "My Resume",
+    link: "https://drive.google.com/file/d/1vq-jhH1JpF4QflUQKkASX6P-5jSThghO/view?usp=sharing",
+    image: googleDriveIconImage,
+  },
+  {
+    name: "Leetcode",
+    link: "https://leetcode.com/u/Yash_01/",
+    image: leetcodeIconImage,
+  },
+  {
+    name: "Hackerrank",
+    link: "https://www.hackerrank.com/profile/Yash_01",
+    image: hackerrankIconImage,
+  },
+  {
+    name: "Codeforces",
+    link: "https://codeforces.com/profile/Yash_01",
+    image: codeforcesIconImage,
+  },
+  {
+    name: "CodeChef",
+    link: "https://www.codechef.com/users/yash3457",
+    image: codechefIconImage,
   },
 ];
 
@@ -86,50 +181,50 @@ export const contactDetails = {
 export const certificates = [
   {
     title: "JavaScript(Intermediate)",
-    image: "./images/certificates/javascript_intermediate.jpg",
+    image: javascriptCertificateImage,
     issuedBy: "Hackerrank",
     issuedOn: "Jan 2024",
-    logo: "./images/certificates/companies/hackerrank.png",
+    logo: hackerrankImage,
     link: "https://www.hackerrank.com/certificates/62b40426f498",
   },
   {
     title: "SQL(Advanced)",
-    image: "./images/certificates/sql_advanced.jpg",
+    image: sqlCertificateImage,
     issuedBy: "Hackerrank",
     issuedOn: "Jan 2024",
-    logo: "./images/certificates/companies/hackerrank.png",
+    logo: hackerrankImage,
     link: "https://www.hackerrank.com/certificates/afe3212a1baa",
   },
   {
     title: "Ethereum and Solidity",
-    image: "./images/certificates/ethereum_and_solidity.jpg",
+    image: ethereumAndSolidityCertificateImage,
     issuedBy: "Udemy",
     issuedOn: "April 2023",
-    logo: "./images/certificates/companies/udemy.png",
+    logo: udemyImage,
     link: "https://www.udemy.com/certificate/UC-17101ac8-122b-4052-b7db-654b13647dcd/",
   },
   {
     title: "React - The Complete guide",
-    image: "./images/certificates/react_complete_guide.jpg",
+    image: reactCompleteGuideImage,
     issuedBy: "Udemy",
     issuedOn: "July 2022",
-    logo: "./images/certificates/companies/udemy.png",
+    logo: udemyImage,
     link: "https://www.udemy.com/certificate/UC-e45c9f0c-c0a1-454d-92b7-81788b4113b7/",
   },
   {
     title: "The Complete 2021 Web Development Bootcamp",
-    image: "./images/certificates/the_complete_web_development_bootcamp.jpg",
+    image: theCompleteWebDevelopmentBootcampImage,
     issuedBy: "Udemy",
     issuedOn: "July 2021",
-    logo: "./images/certificates/companies/udemy.png",
+    logo: udemyImage,
     link: "https://www.udemy.com/certificate/UC-11a1164a-d4bc-4daf-ba4b-d0fd60fb0f0a/",
   },
   {
     title: "Problem Solving (Intermediate)",
     issuedBy: "Hackerrank",
-    image: "./images/certificates/problem_solving_intermediate.jpg",
+    image: problemSolvingIntermediateImage,
     issuedOn: "Sep 2020",
-    logo: "./images/certificates/companies/hackerrank.png",
+    logo: hackerrankImage,
     link: "https://www.hackerrank.com/certificates/94c876ad5f78",
   },
 ];
@@ -138,171 +233,75 @@ export const Skills = [
   {
     category: "Backend",
     skills: [
-      { name: "NodeJS", image: "./images/technologies/backend/nodejs.png" },
-      {
-        name: "ExpressJS",
-        image: "./images/technologies/backend/express.png",
-      },
-      { name: "Django", image: "./images/technologies/backend/django.png" },
-      {
-        name: "FastAPI",
-        image: "./images/technologies/backend/fastapi.png",
-      },
-      {
-        name: "Socket.IO",
-        image: "./images/technologies/backend/socketio.png",
-      },
+      { name: "NodeJS", image: nodejsImage },
+      { name: "ExpressJS", image: expressImage },
+      { name: "Django", image: djangoImage },
+      { name: "FastAPI", image: fastapiImage },
+      { name: "Socket.IO", image: socketioImage },
     ],
   },
   {
     category: "AI Tech",
     skills: [
-      {
-        name: "OpenAI",
-        image: "./images/technologies/artificial_intelligence/openai.png",
-      },
-      {
-        name: "Claude AI",
-        image: "./images/technologies/artificial_intelligence/claude.png",
-      },
-      {
-        name: "Gemini AI",
-        image: "./images/technologies/artificial_intelligence/gemini.png",
-      },
-      {
-        name: "HuggingFace AI",
-        image: "./images/technologies/artificial_intelligence/huggingface.png",
-      },
-      {
-        name: "Groq AI",
-        image: "./images/technologies/artificial_intelligence/groq.png",
-      },
-      {
-        name: "LLaMA",
-        image: "./images/technologies/artificial_intelligence/llama.png",
-      },
-      {
-        name: "LangChain",
-        image: "./images/technologies/artificial_intelligence/langchain.png",
-      },
-      {
-        name: "LangSmith",
-        image: "./images/technologies/artificial_intelligence/langsmith.png",
-      },
+      { name: "OpenAI", image: openaiImage },
+      { name: "Claude AI", image: claudeImage },
+      { name: "Gemini AI", image: geminiImage },
+      { name: "HuggingFace AI", image: huggingfaceImage },
+      { name: "Groq AI", image: groqImage },
+      { name: "LLaMA", image: llamaImage },
+      { name: "LangChain", image: langchainImage },
+      { name: "LangSmith", image: langsmithImage },
     ],
   },
   {
     category: "Frontend",
     skills: [
-      {
-        name: "ReactJS",
-        image: "./images/technologies/frontend/react.png",
-      },
-      {
-        name: "NextJS",
-        image: "./images/technologies/frontend/next-js.png",
-      },
-      { name: "Redux", image: "./images/technologies/frontend/redux.png" },
-      {
-        name: "BootStrap",
-        image: "./images/technologies/frontend/bootstrap.png",
-      },
-      { name: "HTML", image: "./images/technologies/frontend/html.png" },
-      { name: "CSS", image: "./images/technologies/frontend/css.png" },
-      {
-        name: "GraphQL",
-        image: "./images/technologies/frontend/graphql.png",
-      },
+      { name: "ReactJS", image: reactImage },
+      { name: "NextJS", image: nextjsImage },
+      { name: "Redux", image: reduxImage },
+      { name: "BootStrap", image: bootstrapImage },
+      { name: "HTML", image: htmlImage },
+      { name: "CSS", image: cssImage },
+      { name: "GraphQL", image: graphqlImage },
     ],
   },
   {
     category: "Languages",
     skills: [
-      {
-        name: "C++",
-        image: "./images/technologies/languages/c_plus_plus.png",
-      },
-      {
-        name: "JavaScript",
-        image: "./images/technologies/languages/javascript.png",
-      },
-      {
-        name: "Python",
-        image: "./images/technologies/languages/python.png",
-      },
-      { name: "Java", image: "./images/technologies/languages/java.png" },
-      {
-        name: "C",
-        image: "./images/technologies/languages/c.png",
-      },
+      { name: "C++", image: cplusPlusImage },
+      { name: "JavaScript", image: javascriptImage },
+      { name: "Python", image: pythonImage },
+      { name: "Java", image: javaImage },
+      { name: "C", image: cImage },
     ],
   },
   {
     category: "DataBases",
     skills: [
-      {
-        name: "MongoDB",
-        image: "./images/technologies/databases/mongodb.png",
-      },
-      { name: "MySQL", image: "./images/technologies/databases/mysql.png" },
-      {
-        name: "Firebase",
-        image: "./images/technologies/databases/firebase.png",
-      },
-      {
-        name: "PostgreSQL",
-        image: "./images/technologies/databases/postgresql.png",
-      },
-      {
-        name: "Pinecone",
-        image: "./images/technologies/databases/pinecone.png",
-      },
+      { name: "MongoDB", image: mongodbImage },
+      { name: "MySQL", image: mysqlImage },
+      { name: "Firebase", image: firebaseImage },
+      { name: "PostgreSQL", image: postgresqlImage },
+      { name: "Pinecone", image: pineconeImage },
     ],
   },
   {
     category: "Web3",
     skills: [
-      {
-        name: "Solidity",
-        image: "./images/technologies/web3/solidity.png",
-      },
-      {
-        name: "Metamask",
-        image: "./images/technologies/web3/metamask.png",
-      },
-      {
-        name: "Ethereum",
-        image: "./images/technologies/web3/ethereum.png",
-      },
+      { name: "Solidity", image: solidityImage },
+      { name: "Metamask", image: metamaskImage },
+      { name: "Ethereum", image: ethereumImage },
     ],
   },
   {
     category: "DevTools",
     skills: [
-      {
-        name: "Github",
-        image: "./images/technologies/software/github.png",
-      },
-      {
-        name: "VsCode",
-        image: "./images/technologies/software/vscode.png",
-      },
-      {
-        name: "PyCharm",
-        image: "./images/technologies/software/pycharm.png",
-      },
-      {
-        name: "Ubuntu",
-        image: "./images/technologies/software/ubuntu.png",
-      },
-      {
-        name: "Postman",
-        image: "./images/technologies/software/postman.png",
-      },
-      {
-        name: "DBeaver",
-        image: "./images/technologies/software/dbeaver.png",
-      },
+      { name: "Github", image: githubImage },
+      { name: "VsCode", image: vscodeImage },
+      { name: "PyCharm", image: pycharmImage },
+      { name: "Ubuntu", image: ubuntuImage },
+      { name: "Postman", image: postmanImage },
+      { name: "DBeaver", image: dbeaverImage },
     ],
   },
 ];

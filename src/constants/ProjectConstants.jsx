@@ -1,17 +1,34 @@
+import agrotechImage from "../images/projects/agrotech.png";
+import reactImage from "../images/technologies/frontend/react.png";
+import reduxImage from "../images/technologies/frontend/redux.png";
+import nodejsImage from "../images/technologies/backend/nodejs.png";
+import expressImage from "../images/technologies/backend/express.png";
+import mongodbImage from "../images/technologies/databases/mongodb.png";
+import socketioImage from "../images/technologies/backend/socketio.png";
+import crowdwalletImage from "../images/projects/crowdwallet.png";
+import nextjsImage from "../images/technologies/frontend/next-js.png";
+import solidityImage from "../images/technologies/web3/solidity.png";
+import metamaskImage from "../images/technologies/web3/metamask.png";
+import memoreaumImage from "../images/projects/memoreaum.png";
+import simplishopeeImage from "../images/projects/simplishopee.png";
+import bootstrapImage from "../images/technologies/frontend/bootstrap.png";
+import expenseTrackerImage from "../images/projects/expense-tracker.png";
+import djangoImage from "../images/technologies/backend/django.png";
+
 export const projects = [
   {
     title: "AgroTech",
     description:
       "Developed a MERN Stack E-commerce Web Application for agricultural products.",
-    image: "./images/projects/agrotech.png",
+    image: agrotechImage,
     tags: ["ReactJS", "ReduxJS", "NodeJS", "ExpressJS", "MongoDB", "Socket.IO"],
     tagImgs: [
-      "./images/technologies/frontend/react.png",
-      "./images/technologies/frontend/redux.png",
-      "./images/technologies/backend/nodejs.png",
-      "./images/technologies/backend/express.png",
-      "./images/technologies/databases/mongodb.png",
-      "./images/technologies/backend/socketio.png",
+      reactImage,
+      reduxImage,
+      nodejsImage,
+      expressImage,
+      mongodbImage,
+      socketioImage,
     ],
     source: "https://github.com/Yash01607/Ecommerce_website",
     visit: "https://agrotech-yajt.onrender.com/",
@@ -56,13 +73,9 @@ export const projects = [
     title: "CrowdWallet",
     description:
       "Crowd Wallet facilitates project crowdfunding, utilizing Blockchain Technology for Entrepreneurs.",
-    image: "./images/projects/crowdwallet.png",
+    image: crowdwalletImage,
     tags: ["NextJS", "Solidity", "Metamask"],
-    tagImgs: [
-      "./images/technologies/frontend/next-js.png",
-      "./images/technologies/web3/solidity.png",
-      "./images/technologies/web3/metamask.png",
-    ],
+    tagImgs: [nextjsImage, solidityImage, metamaskImage],
     source: "https://github.com/Yash01607/CrowdCoin",
     visit: "https://crowd-coin-yash01607.vercel.app/",
     id: 2,
@@ -101,14 +114,9 @@ export const projects = [
     title: "Memoreaum",
     description:
       "Created a user-friendly social media app with the MERN stack, enabling seamless sharing of moments and events.",
-    image: "./images/projects/memoreaum.png",
+    image: memoreaumImage,
     tags: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
-    tagImgs: [
-      "./images/technologies/databases/mongodb.png",
-      "./images/technologies/backend/express.png",
-      "./images/technologies/frontend/react.png",
-      "./images/technologies/backend/nodejs.png",
-    ],
+    tagImgs: [mongodbImage, expressImage, reactImage, nodejsImage],
     source: "https://github.com/Yash01607/Memoreaum",
     visit: "https://memoreaum.onrender.com/",
     id: 3,
@@ -145,14 +153,9 @@ export const projects = [
     title: "SimpliShopee",
     description:
       "Developed a production ready E-commerce website using Django and ReactJS from scratch",
-    image: "./images/projects/simplishopee.png",
+    image: simplishopeeImage,
     tags: ["ReactJS", "Django", "ReduxJS", "BootStrap"],
-    tagImgs: [
-      "./images/technologies/frontend/react.png",
-      "./images/technologies/backend/django.png",
-      "./images/technologies/frontend/redux.png",
-      "./images/technologies/frontend/bootstrap.png",
-    ],
+    tagImgs: [reactImage, djangoImage, reduxImage, bootstrapImage],
     source: "https://github.com/Yash01607/SimpliShopee",
     visit: "https://simplishopee.pythonanywhere.com/",
     id: 4,
@@ -218,14 +221,9 @@ export const projects = [
     title: "Expense Tracker",
     description:
       "Developed a user friendly Expense Tracker Web-App where users can digitally keep track of their monthly expenses.",
-    image: "./images/projects/expense-tracker.png",
+    image: expenseTrackerImage,
     tags: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
-    tagImgs: [
-      "./images/technologies/frontend/react.png",
-      "./images/technologies/backend/nodejs.png",
-      "./images/technologies/backend/express.png",
-      "./images/technologies/databases/mongodb.png",
-    ],
+    tagImgs: [reactImage, nodejsImage, expressImage, mongodbImage],
     source: "https://github.com/Yash01607/Expense-Tracker",
     visit: "https://expense-tracker-t01y.onrender.com/",
     id: 6,

@@ -19,6 +19,35 @@ export const LeftSection = styled.div`
   }
 `;
 
+export const SocialIconsContainer = styled(motion.div)`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: ${(props) => (props.center ? "2rem auto" : "2rem 0rem")};
+`;
+
+export const SocialIcons = styled(motion.a)`
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+`;
+
+export const SocialIconImg = styled(motion.img)`
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+
+  /* @media ${(props) => props.theme.breakpoints.md} {
+    height: 3rem;
+    width: 3rem;
+  } */
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 3rem;
+    width: 3rem;
+  }
+`;
+
 export const TitleText = styled(motion.div)`
   max-width: 800px;
   font-size: 24px;
@@ -131,20 +160,27 @@ export const IntroText = styled(motion.p)`
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
-  padding-bottom: ${(props) => (props.main ? "0" : "3.6rem")};
   color: rgba(255, 255, 255, 0.5);
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     font-size: 20px;
     line-height: 32px;
-    padding-bottom: 24px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 16px;
+  }
+`;
+
+export const ButtonsDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    justify-content: space-around;
   }
 `;
 
@@ -157,7 +193,7 @@ export const KnowMoreButton = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0 80px;
+  margin: 0 40px 80px 0;
   color: #fff;
   background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
   cursor: pointer;
@@ -173,7 +209,7 @@ export const KnowMoreButton = styled(motion.div)`
     width: 100%;
     height: 32px;
     font-size: 14px;
-    margin-bottom: 32px;
+    margin: 0 10px 32px 10px;
   }
 `;
 

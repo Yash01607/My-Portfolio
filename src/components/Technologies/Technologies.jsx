@@ -26,13 +26,7 @@ const Technologies = () => (
     </SectionText>
     <List>
       {Skills.map((skillGroup, i) => (
-        <ListItem
-          key={i}
-          whileHover={{
-            scale: 1.05,
-            transition: { duration: 0.4, ease: "easeInOut" },
-          }}
-        >
+        <ListItem key={i}>
           <ListTitle
             initial={{ opacity: 0, x: -15 }}
             whileInView={{
