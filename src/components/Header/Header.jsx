@@ -57,7 +57,7 @@ const Header = () => {
           </SocialIcons>
           {width > 395 && (
             <SocialIcons
-              href="https://drive.google.com/file/d/1vq-jhH1JpF4QflUQKkASX6P-5jSThghO/view?usp=sharing"
+              href="https://drive.google.com/file/d/10MfQfs0Y6RBucbhT6Fppg852d4cgA_i9/view"
               target="_blank"
               title="My Resume"
             >
