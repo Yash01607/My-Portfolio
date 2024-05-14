@@ -176,7 +176,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 4, ease: "easeInOut" }}
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/10MfQfs0Y6RBucbhT6Fppg852d4cgA_i9/view",
+                  "https://drive.google.com/file/d/1flHV8Mddl0l5abVKpav9pYQjvSqKK8Xz/view?usp=sharing",
                   "_blank"
                 )
               }

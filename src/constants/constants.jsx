@@ -91,11 +91,13 @@ export const Experience = [
     location: "Hyderabad, Telangana",
     image: beehyvImage,
     desc: [
-      "Engaged in ongoing projects with LLM-Models alongside utilizing leading AI tools such as OpenAI and Langchain.",
-      "Collaborated on building an AI app using RAG Framework and Langchain.",
-      "Utilized various AI models including OpenAI, Claude, and Anthropic, as well as open-source models like LLAMA 2.",
-      "Boosted process efficiency by 67% through the implementation of parallel processing techniques.",
-      "Designed and constructed a fully functional Ecommerce Website from scratch using Django and React.",
+      "Co-developing an AI based project to generate vector embeddings for documents, for answering user query about the documents, using the RAG framework.",
+      "Implemented various document vector embedding’s generation methods as independent micro-services.",
+      "Co-created a search service that retrieves results from browser to answer user queries.",
+      "Integrated GIDR with various AI models like OpenAI, Claude, Gemini, HuggingFace, Groq and LLaMA.",
+      "Worked on building a NodeJS layer to manage users and all micro-services.",
+      "Boosted a process’s performance by 67% using Multi-Threading.",
+      "Developed multiple SQL and database migration scripts.",
     ],
     techStack: [
       "Python",
@@ -138,7 +140,7 @@ export const socialIcons = [
   },
   {
     name: "My Resume",
-    link: "https://drive.google.com/file/d/10MfQfs0Y6RBucbhT6Fppg852d4cgA_i9/view",
+    link: "https://drive.google.com/file/d/1flHV8Mddl0l5abVKpav9pYQjvSqKK8Xz/view?usp=sharing",
     image: googleDriveIconImage,
   },
   {
