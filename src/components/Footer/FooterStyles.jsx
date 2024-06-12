@@ -12,6 +12,16 @@ export const FooterWrapper = styled.section`
     width: calc(100vw - 32px);
   }
 `;
+export const SocialIconImg = styled.img`
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 3rem;
+    width: 3rem;
+  }
+`;
 
 export const LinkItem = styled.a`
   font-size: 18px;

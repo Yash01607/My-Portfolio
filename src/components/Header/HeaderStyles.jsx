@@ -110,10 +110,20 @@ export const SocialIcons = styled(motion.a)`
   color: white;
   border-radius: 50px;
   padding: 8px;
-  /* &:hover {
-    background-color: #212d45;
+  &:hover {
     cursor: pointer;
-  } */
+  }
+`;
+
+export const SocialIconImg = styled(motion.img)`
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 3rem;
+    width: 3rem;
+  }
 `;
 
 export const MenuIcon = styled.div`

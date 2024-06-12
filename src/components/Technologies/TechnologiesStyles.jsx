@@ -118,10 +118,6 @@ export const ListItem = styled(motion.li)`
   margin: 0 auto 30px auto;
   padding: 30px 0 30px 0;
 
-  &:hover {
-    cursor: pointer;
-  }
-
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-bottom: 14px;
     flex-direction: column;

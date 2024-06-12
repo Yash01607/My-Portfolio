@@ -225,9 +225,6 @@ export const ListItem = styled(motion.li)`
   margin: 0 auto 30px auto;
   padding: 20px;
 
-  &:hover {
-    cursor: pointer;
-  }
   @media ${(props) => props.theme.breakpoints.lg} {
     padding: 30px;
   }

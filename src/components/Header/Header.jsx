@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
-import { FaGoogleDrive } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
-import { FaHackerrank } from "react-icons/fa6";
-import { SiCodeforces } from "react-icons/si";
-import { SiCodechef } from "react-icons/si";
 
 import ContactModal from "../ContactModal/ContactModal";
 
@@ -21,12 +15,17 @@ import {
   Span,
   Div1Link,
   Div1Div3Wrapper,
+  SocialIconImg,
 } from "./HeaderStyles";
+
+import { socialIcons } from "../../constants/constants";
 
 const Header = () => {
   const [openModal, setopenModal] = useState(false);
 
   const { width } = useWindowDimensions();
+
+  const breakPoints = [0, 0, 395, 442, 487, 535, 579];
 
   const modalOpenerHandler = () => {
     setopenModal(true);
@@ -41,64 +40,21 @@ const Header = () => {
           </Div1Link>
         </Div1>
         <Div3>
-          <SocialIcons
-            href="https://github.com/Yash01607"
-            target="_blank"
-            title="My GitHub"
-          >
-            <AiFillGithub size={"3rem"} />
-          </SocialIcons>
-          <SocialIcons
-            href="https://www.linkedin.com/in/yash-agrawal-a150991a5/"
-            target="_blank"
-            title="My LinkedIn"
-          >
-            <AiFillLinkedin size={"3rem"} />
-          </SocialIcons>
-          {width > 395 && (
-            <SocialIcons
-              href="https://drive.google.com/file/d/1flHV8Mddl0l5abVKpav9pYQjvSqKK8Xz/view?usp=sharing"
-              target="_blank"
-              title="My Resume"
-            >
-              <FaGoogleDrive size={"3rem"} />
-            </SocialIcons>
-          )}
-          {width > 442 && (
-            <SocialIcons
-              href="https://leetcode.com/u/Yash_01/"
-              target="_blank"
-              title="Leetcode"
-            >
-              <SiLeetcode size={"3rem"} />
-            </SocialIcons>
-          )}
-          {width > 487 && (
-            <SocialIcons
-              href="https://www.hackerrank.com/profile/Yash_01"
-              target="_blank"
-              title="Hackerrank"
-            >
-              <FaHackerrank size={"3rem"} />
-            </SocialIcons>
-          )}
-          {width > 535 && (
-            <SocialIcons
-              href="https://codeforces.com/profile/Yash_01"
-              target="_blank"
-              title="Codeforces"
-            >
-              <SiCodeforces size={"3rem"} />
-            </SocialIcons>
-          )}
-          {width > 579 && (
-            <SocialIcons
-              href="https://www.codechef.com/users/yash3457"
-              target="_blank"
-              title="CodeChef"
-            >
-              <SiCodechef size={"3rem"} />
-            </SocialIcons>
+          {socialIcons.map(
+            (icon, i) =>
+              width > breakPoints[i] && (
+                <SocialIcons
+                  key={i}
+                  href={icon.link}
+                  target="_blank"
+                  title={icon.name}
+                >
+                  <SocialIconImg
+                    src={icon.image}
+                    alt={icon.name}
+                  ></SocialIconImg>
+                </SocialIcons>
+              )
           )}
         </Div3>
       </Div1Div3Wrapper>
