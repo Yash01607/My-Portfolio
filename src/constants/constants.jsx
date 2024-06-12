@@ -93,7 +93,8 @@ export const Experience = [
     desc: [
       "Co-developing an AI based project to generate vector embeddings for documents, for answering user query about the documents, using the RAG framework.",
       "Implemented various document vector embedding’s generation methods as independent micro-services.",
-      "Co-created a search service that retrieves results from browser to answer user queries.",
+      "Co-created a search service that scrapes content from websites to answer user queries.",
+      "Reduced the time for scraping websites by 50%",
       "Integrated GIDR with various AI models like OpenAI, Claude, Gemini, HuggingFace, Groq and LLaMA.",
       "Worked on building a NodeJS layer to manage users and all micro-services.",
       "Boosted a process’s performance by 67% using Multi-Threading.",
