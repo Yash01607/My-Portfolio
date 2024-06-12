@@ -127,6 +127,7 @@ export const Experience = [
   },
 ];
 
+// be careful while Updating the length, check header file for display. Write a better logic for header
 export const socialIcons = [
   {
     name: "My GitHub",
