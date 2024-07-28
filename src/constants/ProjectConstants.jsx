@@ -17,58 +17,74 @@ import djangoImage from "../images/technologies/backend/django.png";
 
 export const projects = [
   {
-    title: "AgroTech",
+    title: "SimpliShopee",
     description:
-      "Developed a MERN Stack E-commerce Web Application for agricultural products.",
-    image: agrotechImage,
-    tags: ["ReactJS", "ReduxJS", "NodeJS", "ExpressJS", "MongoDB", "Socket.IO"],
-    tagImgs: [
-      reactImage,
-      reduxImage,
-      nodejsImage,
-      expressImage,
-      mongodbImage,
-      socketioImage,
-    ],
-    source: "https://github.com/Yash01607/Ecommerce_website",
-    visit: "https://agrotech-yajt.onrender.com/",
-    id: 1,
+      "Developed a production ready E-commerce website using Django and ReactJS from scratch",
+    image: simplishopeeImage,
+    tags: ["ReactJS", "Django", "ReduxJS", "BootStrap"],
+    tagImgs: [reactImage, djangoImage, reduxImage, bootstrapImage],
+    source: "https://github.com/Yash01607/SimpliShopee",
+    visit: "https://simplishopee.pythonanywhere.com/",
+    id: 4,
     details: [
       {
-        heading: "User Authentication and Security",
+        heading: "User Authentication and Authorization",
         description: [
-          "Secure user registration and login functionalities using JSON Web Token (JWT) for enhanced security.",
-          "Allows users to securely purchase products and track their order history.",
+          "Secure user registration and login functionalities.",
+          "Role-based access control to manage user permissions.",
         ],
       },
       {
-        heading: "Live Chat with Admin",
+        heading: "Product Management",
         description: [
-          "Implements live chat functionality using Socket.io for real-time communication between customers and admin users.",
+          "Intuitive product catalog with detailed product information.",
+          "Support for product categories, tags(Sub Categories) and filters.",
+          "Product search functionality.",
         ],
       },
       {
-        heading: "Dynamic Rating and Review System",
+        heading: "Shopping Cart",
         description: [
-          "Users can rate and review products, providing valuable feedback to both farmers and buyers.",
+          "User-friendly shopping cart for adding, updating, and removing items.",
+          "Real-time cart updates without page refresh using React and Redux.",
         ],
       },
       {
-        heading: "Search and Filtering Mechanism",
+        heading: "Checkout Process",
         description: [
-          "Robust product search and filtering options for efficient navigation.",
-          "Allows users to find products based on categories, price range, ratings, and other relevant parameters.",
+          "Seamless and secure checkout experience.",
+          "Order summary and confirmation.",
+        ],
+      },
+      {
+        heading: "Order Management",
+        description: [
+          "Order history and tracking for users.",
+          "Order status updates.",
         ],
       },
       {
         heading: "Admin Dashboard",
         description: [
-          "Comprehensive admin panel for managing products, categories, user accounts, and order details.",
-          "Analytics tools providing insights into total sales and total users.",
+          "Comprehensive admin panel for managing products, orders, and users.",
+        ],
+      },
+      {
+        heading: "Responsive Design",
+        description: [
+          "Mobile-friendly design for optimal user experience across devices.",
+        ],
+      },
+      {
+        heading: "Security",
+        description: [
+          "HTTPS implementation for secure data transmission.",
+          "Protection against common web vulnerabilities.",
         ],
       },
     ],
   },
+
   {
     title: "CrowdWallet",
     description:
@@ -150,69 +166,54 @@ export const projects = [
     ],
   },
   {
-    title: "SimpliShopee",
+    title: "AgroTech",
     description:
-      "Developed a production ready E-commerce website using Django and ReactJS from scratch",
-    image: simplishopeeImage,
-    tags: ["ReactJS", "Django", "ReduxJS", "BootStrap"],
-    tagImgs: [reactImage, djangoImage, reduxImage, bootstrapImage],
-    source: "https://github.com/Yash01607/SimpliShopee",
-    visit: "https://simplishopee.pythonanywhere.com/",
-    id: 4,
+      "Developed a MERN Stack E-commerce Web Application for agricultural products.",
+    image: agrotechImage,
+    tags: ["ReactJS", "ReduxJS", "NodeJS", "ExpressJS", "MongoDB", "Socket.IO"],
+    tagImgs: [
+      reactImage,
+      reduxImage,
+      nodejsImage,
+      expressImage,
+      mongodbImage,
+      socketioImage,
+    ],
+    source: "https://github.com/Yash01607/Ecommerce_website",
+    visit: "https://agrotech-yajt.onrender.com/",
+    id: 1,
     details: [
       {
-        heading: "User Authentication and Authorization",
+        heading: "User Authentication and Security",
         description: [
-          "Secure user registration and login functionalities.",
-          "Role-based access control to manage user permissions.",
+          "Secure user registration and login functionalities using JSON Web Token (JWT) for enhanced security.",
+          "Allows users to securely purchase products and track their order history.",
         ],
       },
       {
-        heading: "Product Management",
+        heading: "Live Chat with Admin",
         description: [
-          "Intuitive product catalog with detailed product information.",
-          "Support for product categories, tags(Sub Categories) and filters.",
-          "Product search functionality.",
+          "Implements live chat functionality using Socket.io for real-time communication between customers and admin users.",
         ],
       },
       {
-        heading: "Shopping Cart",
+        heading: "Dynamic Rating and Review System",
         description: [
-          "User-friendly shopping cart for adding, updating, and removing items.",
-          "Real-time cart updates without page refresh using React and Redux.",
+          "Users can rate and review products, providing valuable feedback to both farmers and buyers.",
         ],
       },
       {
-        heading: "Checkout Process",
+        heading: "Search and Filtering Mechanism",
         description: [
-          "Seamless and secure checkout experience.",
-          "Order summary and confirmation.",
-        ],
-      },
-      {
-        heading: "Order Management",
-        description: [
-          "Order history and tracking for users.",
-          "Order status updates.",
+          "Robust product search and filtering options for efficient navigation.",
+          "Allows users to find products based on categories, price range, ratings, and other relevant parameters.",
         ],
       },
       {
         heading: "Admin Dashboard",
         description: [
-          "Comprehensive admin panel for managing products, orders, and users.",
-        ],
-      },
-      {
-        heading: "Responsive Design",
-        description: [
-          "Mobile-friendly design for optimal user experience across devices.",
-        ],
-      },
-      {
-        heading: "Security",
-        description: [
-          "HTTPS implementation for secure data transmission.",
-          "Protection against common web vulnerabilities.",
+          "Comprehensive admin panel for managing products, categories, user accounts, and order details.",
+          "Analytics tools providing insights into total sales and total users.",
         ],
       },
     ],

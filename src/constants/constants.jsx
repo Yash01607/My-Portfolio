@@ -178,7 +178,7 @@ export const aboutMeText = [
 
 export const contactDetails = {
   phone: "+91-89755-17715",
-  email: " yashagrawal01meh@gmail.com",
+  email: " yash.ra301@gmail.com",
   address: "Kondapur, Hyderabad, Telangana 500084",
 };
 
