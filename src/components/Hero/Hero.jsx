@@ -174,12 +174,7 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 4, ease: "easeInOut" }}
-              onClick={() =>
-                window.open(
-                  "https://drive.google.com/file/d/1flHV8Mddl0l5abVKpav9pYQjvSqKK8Xz/view?usp=sharing",
-                  "_blank"
-                )
-              }
+              onClick={() => window.open(socialIcons[2].link, "_blank")}
               title="View Resume"
             >
               View Resume
