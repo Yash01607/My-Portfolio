@@ -142,7 +142,7 @@ export const socialIcons = [
   },
   {
     name: "My Resume",
-    link: "https://drive.google.com/file/d/10BBykMKIkzJ7qwfe51EpQUxarLdeoBVU/view",
+    link: "https://drive.google.com/file/d/10BBykMKIkzJ7qwfe51EpQUxarLdeoBVU/view?usp=sharing",
     image: googleDriveIconImage,
   },
   {
