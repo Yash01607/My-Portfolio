@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import BgAnimation from "./components/BackgroundAnimation/BackgroundAnimation";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
@@ -13,7 +13,7 @@ import ExperienceSection from "./components/Experience/Experience";
 function App() {
   return (
     <Layout>
-      <Section grid>
+      <Section grid="true">
         <Hero />
         <BgAnimation />
       </Section>

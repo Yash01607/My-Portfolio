@@ -30,10 +30,7 @@ const Hero = () => {
   const [showSummary, setShowSummary] = useState(null);
   return (
     <>
-      <Section
-        row
-        nopadding
-      >
+      <Section nopadding="true">
         <Modal
           onClose={() => {
             setShowSummary(null);
