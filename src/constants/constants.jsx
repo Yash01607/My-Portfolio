@@ -1,5 +1,6 @@
 import beehyvImage from "../images/experience/beehyv.png";
 import iauroImage from "../images/experience/iauro.png";
+import privadoImage from "../images/experience/privado.png";
 import javascriptCertificateImage from "../images/certificates/javascript_intermediate.jpg";
 import sqlCertificateImage from "../images/certificates/sql_advanced.jpg";
 import ethereumAndSolidityCertificateImage from "../images/certificates/ethereum_and_solidity.jpg";
@@ -11,6 +12,8 @@ import expressImage from "../images/technologies/backend/express.png";
 import djangoImage from "../images/technologies/backend/django.png";
 import fastapiImage from "../images/technologies/backend/fastapi.png";
 import socketioImage from "../images/technologies/backend/socketio.png";
+import celeryImage from "../images/technologies/backend/celery.png";
+import mongooseImage from "../images/technologies/backend/mongoose.png";
 import openaiImage from "../images/technologies/artificial_intelligence/openai.png";
 import claudeImage from "../images/technologies/artificial_intelligence/claude.png";
 import geminiImage from "../images/technologies/artificial_intelligence/gemini.png";
@@ -19,6 +22,7 @@ import groqImage from "../images/technologies/artificial_intelligence/groq.png";
 import llamaImage from "../images/technologies/artificial_intelligence/llama.png";
 import langchainImage from "../images/technologies/artificial_intelligence/langchain.png";
 import langsmithImage from "../images/technologies/artificial_intelligence/langsmith.png";
+import langgraphImage from "../images/technologies/artificial_intelligence/langgraph.png";
 import reactImage from "../images/technologies/frontend/react.png";
 import nextjsImage from "../images/technologies/frontend/next-js.png";
 import reduxImage from "../images/technologies/frontend/redux.png";
@@ -26,8 +30,10 @@ import bootstrapImage from "../images/technologies/frontend/bootstrap.png";
 import htmlImage from "../images/technologies/frontend/html.png";
 import cssImage from "../images/technologies/frontend/css.png";
 import graphqlImage from "../images/technologies/frontend/graphql.png";
+import d3Image from "../images/technologies/frontend/d3.png";
 import cplusPlusImage from "../images/technologies/languages/c_plus_plus.png";
 import javascriptImage from "../images/technologies/languages/javascript.png";
+import typescriptImage from "../images/technologies/languages/typescript.png";
 import pythonImage from "../images/technologies/languages/python.png";
 import javaImage from "../images/technologies/languages/java.png";
 import cImage from "../images/technologies/languages/c.png";
@@ -36,6 +42,8 @@ import mysqlImage from "../images/technologies/databases/mysql.png";
 import firebaseImage from "../images/technologies/databases/firebase.png";
 import postgresqlImage from "../images/technologies/databases/postgresql.png";
 import pineconeImage from "../images/technologies/databases/pinecone.png";
+import sqliteImage from "../images/technologies/databases/sqlite.png";
+import redisImage from "../images/technologies/databases/redis.png";
 import solidityImage from "../images/technologies/web3/solidity.png";
 import metamaskImage from "../images/technologies/web3/metamask.png";
 import ethereumImage from "../images/technologies/web3/ethereum.png";
@@ -57,7 +65,7 @@ import codechefIconImage from "../images/socialicons/codechef.png";
 
 export const Titles = [
   "B.Tech - IIT Dhanbad'23 ",
-  "Software Developer - Beehyv",
+  "Software Developer - Privado.ai",
 ];
 
 export const EducationDetails = [
@@ -85,14 +93,40 @@ export const EducationDetails = [
 
 export const Experience = [
   {
+    time: "Feb '25 - Present",
+    designation: "Software Developer",
+    company: "Privado.ai",
+    location: "Pune, Maharashtra",
+    image: privadoImage,
+    desc: [
+      "Responsible for end-to-end product ownership, including initial POCs, frontend and backend engineering, UI/UX design, testing, and post release maintenance",
+      "Built efficient MongoDB aggregation pipelines with pre-computation for graph dashboard.",
+      "Worked with D3.js to build interactive graphs for dashboard visualizations",
+    ],
+    techStack: [
+      "Python",
+      "Django",
+      "ReactJS",
+      "MongoDB",
+      "Amazon AWS",
+      "Docker",
+      "Celery",
+      "Redis",
+      "D3.js",
+    ],
+  },
+  {
     time: "July '23 - Present",
     designation: "Software Developer",
     company: "Beehyv Software Solutions Pvt. Ltd.",
     location: "Hyderabad, Telangana",
     image: beehyvImage,
     desc: [
-      "Co-developing a GEN-AI solution to generate documents vector embeddings for enhanced query responses, using the RAG Framework(Retrieval-Augmented Generation).",
-      "Implemented 3 Vector-Embedding generation methods as Independent MicroServices, managed by Messaging Queues.",
+      "Co-developed GIDR - A knowledge management and document querying software that uses AI to provide insights and answers from your documents",
+      "Built the query-answering system using document vector embeddings and the RAG(Retrieval-Augmented Generation) framework",
+      "Utilized LangGraph to build independent, Reusable Component Nodes that provides users flexibility to design custom query-answering workflows",
+      "Worked on scanning websites and various file types to extract data and generate vector embeddings",
+      // "Implemented 3 Vector-Embedding generation methods as Independent MicroServices, managed by Messaging Queues.",
       "Reduced the Search service response time by 80% by the use of MultiThreading and Caching.",
       "Boosted Ingestion process's performance by 70% using Multi-Threading and Batch Calls.",
       "Resolved over 20 critical bugs and constantly addressed production issues to ensure system stability.",
@@ -101,14 +135,14 @@ export const Experience = [
       "Developed SQL and database migration scripts, along with scripts for vector databases and similarity search functions.",
     ],
     techStack: [
-      "Python",
-      "FastAPI",
-      "Django",
-      "OpenAI",
       "LangChain",
+      "LangGraph",
+      "FastAPI",
+      "NodeJS",
+      "OpenAI",
       "Pinecone",
       "ReactJS",
-      "MySQL",
+      "PostgreSQL",
       "Google Cloud Platform",
     ],
   },
@@ -237,11 +271,13 @@ export const Skills = [
   {
     category: "Backend",
     skills: [
-      { name: "NodeJS", image: nodejsImage },
-      { name: "ExpressJS", image: expressImage },
       { name: "Django", image: djangoImage },
       { name: "FastAPI", image: fastapiImage },
+      { name: "NodeJS", image: nodejsImage },
+      { name: "ExpressJS", image: expressImage },
       { name: "Socket.IO", image: socketioImage },
+      { name: "Celery", image: celeryImage },
+      { name: "Mongoose", image: mongooseImage },
     ],
   },
   {
@@ -255,6 +291,7 @@ export const Skills = [
       { name: "LLaMA", image: llamaImage },
       { name: "LangChain", image: langchainImage },
       { name: "LangSmith", image: langsmithImage },
+      { name: "LangGraph", image: langgraphImage },
     ],
   },
   {
@@ -264,9 +301,9 @@ export const Skills = [
       { name: "NextJS", image: nextjsImage },
       { name: "Redux", image: reduxImage },
       { name: "BootStrap", image: bootstrapImage },
-      { name: "HTML", image: htmlImage },
       { name: "CSS", image: cssImage },
       { name: "GraphQL", image: graphqlImage },
+      { name: "D3.js", image: d3Image },
     ],
   },
   {
@@ -277,6 +314,8 @@ export const Skills = [
       { name: "Python", image: pythonImage },
       { name: "Java", image: javaImage },
       { name: "C", image: cImage },
+      { name: "TypeScript", image: typescriptImage },
+      { name: "HTML", image: htmlImage },
     ],
   },
   {
@@ -287,6 +326,8 @@ export const Skills = [
       { name: "Firebase", image: firebaseImage },
       { name: "PostgreSQL", image: postgresqlImage },
       { name: "Pinecone", image: pineconeImage },
+      { name: "Redis", image: redisImage },
+      { name: "SQLite", image: sqliteImage },
     ],
   },
   {
